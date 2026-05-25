@@ -136,6 +136,13 @@ body {
     Bilgan mavzulardan tezroq o'tadi,<br>
     qiyin mavzularda chuqurroq tekshiradi.
   </p>
+  <div style="background:var(--secondary-bg); border-radius:12px; padding:12px; margin:12px 0; text-align:left;">
+    <div style="font-size:13px; font-weight:600; margin-bottom:6px;">🎁 Bepul sinov:</div>
+    <div style="font-size:12px; color:var(--hint); line-height:1.5;">
+      • 5 ta mavzu + qisqa AI tahlil<br>
+      • To'liq 45 mavzu + shaxsiy reja — ⭐ pullik
+    </div>
+  </div>
   <button class="btn" onclick="startTest()">Testni boshlash</button>
 </div>
 
@@ -159,6 +166,23 @@ body {
   <p>Bir oz tinchlan va diqqatingni jamla.<br>Shoshilmasdan javob ber.</p>
   <div id="pause-timer">2:00</div>
   <button class="btn secondary" id="pause-skip" style="display:none" onclick="resumeTest()">Davom etish</button>
+</div>
+
+<div id="paywall-screen" class="screen">
+  <div style="text-align:center; padding-top:30px;">
+    <div style="font-size:48px; margin-bottom:12px;">🎯</div>
+    <h2>Sinov test tugadi!</h2>
+    <p style="color:var(--hint); margin:12px 0; line-height:1.5;">
+      5 ta mavzu bo'yicha sinov natijangiz:
+    </p>
+    <div id="trial-results" style="margin:16px 0;"></div>
+    <div id="trial-ai" style="text-align:left; background:var(--secondary-bg); border-radius:12px; padding:14px; margin:16px 0; font-size:14px; line-height:1.6;"></div>
+    <p style="color:var(--hint); font-size:13px; margin:16px 0; line-height:1.5;">
+      Qolgan <strong>40 ta mavzu</strong> bo'yicha to'liq diagnostika + <strong>AI shaxsiy reja</strong> olish uchun to'liq versiyani oching.
+    </p>
+    <button class="btn" onclick="requestPayment()">⭐ To'liq test — sotib olish</button>
+    <button class="btn secondary" onclick="sendTrialResults()" style="margin-top:8px;">Bepul natijani yuborish</button>
+  </div>
 </div>
 
 <div id="result-screen" class="screen">
@@ -228,6 +252,7 @@ class AdaptiveEngine {
     this.topicState = null;
     this.consecutiveFastWrong = 0;
     this.usedKeys = new Set();
+    this.isPaid = false;
   }
 
   startTopic() {
@@ -348,16 +373,19 @@ class AdaptiveEngine {
     if (this.lessonIndex >= lessons.length) {
       return { action: 'finish' };
     }
+    if (this.lessonIndex === 5 && !this.isPaid) {
+      return { action: 'paywall' };
+    }
     return { action: 'next_topic' };
   }
 
   updateGlobalLevel() {
-    const recent = this.topicResults.slice(-5);
+    const recent = this.responses.slice(-5);
     if (recent.length < 3) return;
 
-    const greens = recent.filter(r => r.status === 'yashil').length;
-    if (greens >= 4) this.globalLevel = 4;
-    else if (greens >= 2) this.globalLevel = Math.min(4, Math.max(2, this.globalLevel));
+    const correctCount = recent.filter(r => r.correct).length;
+    if (correctCount >= 4) this.globalLevel = 4;
+    else if (correctCount >= 2) this.globalLevel = Math.min(4, Math.max(2, this.globalLevel));
     else this.globalLevel = 2;
   }
 
@@ -391,6 +419,10 @@ function showScreen(id) {
 
 function startTest() {
   engine = new AdaptiveEngine();
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('paid') === '1') {
+    engine.isPaid = true;
+  }
   totalQuestionsAsked = 0;
   showScreen('test-screen');
   startNextTopic();
@@ -474,6 +506,8 @@ function selectAnswer(letter) {
       const prog = engine.getProgress();
       document.getElementById('topic-counter').textContent = `${prog.current + 1} / ${prog.total}`;
       showQuestion(result.question);
+    } else if (result.action === 'paywall') {
+      showPaywall();
     } else if (result.action === 'next_topic') {
       startNextTopic();
     } else if (result.action === 'finish') {
@@ -516,6 +550,59 @@ function resumeTest() {
   } else {
     startNextTopic();
   }
+}
+
+function showPaywall() {
+  clearInterval(timerInterval);
+  showScreen('paywall-screen');
+
+  const summary = engine.getSummary();
+  const trialTopics = summary.topicResults;
+
+  let html = '<div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">';
+  for (const t of trialTopics) {
+    const emoji = t.status === 'yashil' ? '🟢' : t.status === 'sariq' ? '🟡' : '🔴';
+    html += `<div style="background:var(--secondary-bg); border-radius:8px; padding:6px 10px; font-size:12px;">${emoji} ${t.title.substring(0, 20)}</div>`;
+  }
+  html += '</div>';
+  document.getElementById('trial-results').innerHTML = html;
+
+  const greens = trialTopics.filter(t => t.status === 'yashil').length;
+  const reds = trialTopics.filter(t => t.status === 'qizil').length;
+  let aiText = `📊 5 mavzu sinovi: ${greens} ta biladi, ${trialTopics.length - greens - reds} ta mashq kerak, ${reds} ta zaif.\n\n`;
+  if (reds > 0) {
+    aiText += `⚠️ Zaif mavzular: ${trialTopics.filter(t => t.status === 'qizil').map(t => t.title).join(', ')}.\n\n`;
+  }
+  aiText += `💡 To'liq 45 mavzulik test qolgan 40 mavzuni ham tekshiradi va AI shaxsiy 30 kunlik reja tuzib beradi.`;
+  document.getElementById('trial-ai').textContent = aiText;
+}
+
+function requestPayment() {
+  tg.sendData(JSON.stringify({
+    action: 'request_payment',
+    trialResults: engine.getSummary().topicResults,
+    responses: engine.getSummary().responses,
+  }));
+}
+
+function sendTrialResults() {
+  const summary = engine.getSummary();
+  tg.sendData(JSON.stringify({
+    action: 'trial_complete',
+    responses: summary.responses,
+    topicResults: summary.topicResults,
+    correct: summary.correct,
+    total: summary.total,
+    percent: summary.percent,
+    avgTime: summary.avgTime,
+    isTrial: true,
+  }));
+}
+
+function unlockFullTest() {
+  engine.isPaid = true;
+  showScreen('test-screen');
+  startNextTopic();
 }
 
 function finishTest() {
