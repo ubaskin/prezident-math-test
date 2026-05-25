@@ -1,0 +1,3426 @@
+{
+  "version": 1,
+  "total": 180,
+  "questions": [
+    {
+      "id": 1,
+      "lesson_id": 1,
+      "lesson_title": "Raqamlar. Natural sonlar. 4 amalga doir",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Hisoblang: 12 + 13 - 14",
+      "options": {
+        "A": "13",
+        "B": "11",
+        "C": "15",
+        "D": "9"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 2,
+      "lesson_id": 1,
+      "lesson_title": "Raqamlar. Natural sonlar. 4 amalga doir",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 12 + 6 . 7",
+      "options": {
+        "A": "60",
+        "B": "48",
+        "C": "54",
+        "D": "126"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 3,
+      "lesson_id": 1,
+      "lesson_title": "Raqamlar. Natural sonlar. 4 amalga doir",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Hisoblang: (6 + 10) . 9 - (54 - 9) : 5",
+      "options": {
+        "A": "153",
+        "B": "144",
+        "C": "135",
+        "D": "126"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 4,
+      "lesson_id": 1,
+      "lesson_title": "Raqamlar. Natural sonlar. 4 amalga doir",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Hisoblang: 14 . (7 + 11) - 352 : 11",
+      "options": {
+        "A": "284",
+        "B": "210",
+        "C": "220",
+        "D": "252"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 5,
+      "lesson_id": 2,
+      "lesson_title": "Natural sonlarni taqqoslash. Sodda tenglamalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Tenglamani yeching: x + 15 = 35",
+      "options": {
+        "A": "25",
+        "B": "20",
+        "C": "50",
+        "D": "15"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 6,
+      "lesson_id": 2,
+      "lesson_title": "Natural sonlarni taqqoslash. Sodda tenglamalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Tenglamani yeching: x . 9 = 108",
+      "options": {
+        "A": "11",
+        "B": "97",
+        "C": "13",
+        "D": "12"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 7,
+      "lesson_id": 2,
+      "lesson_title": "Natural sonlarni taqqoslash. Sodda tenglamalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Tenglamani yeching: 1530 : x = 45",
+      "options": {
+        "A": "30",
+        "B": "36",
+        "C": "32",
+        "D": "34"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 8,
+      "lesson_id": 2,
+      "lesson_title": "Natural sonlarni taqqoslash. Sodda tenglamalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Tenglamani yeching: k . 9 = 108 + 351",
+      "options": {
+        "A": "51",
+        "B": "49",
+        "C": "41",
+        "D": "61"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 9,
+      "lesson_id": 3,
+      "lesson_title": "Sodda masalalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Alisherda 25 ta kitob bor. Mubinada esa undan 15 ta ortiq kitob bor. Mubinaning kitoblari nechta?",
+      "options": {
+        "A": "10",
+        "B": "40",
+        "C": "30",
+        "D": "35"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 10,
+      "lesson_id": 3,
+      "lesson_title": "Sodda masalalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "3 ta daftarning narxi 7 500 so'm. Bitta daftar necha so'm turadi?",
+      "options": {
+        "A": "2 250 so'm",
+        "B": "1 500 so'm",
+        "C": "2 500 so'm",
+        "D": "3 000 so'm"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 11,
+      "lesson_id": 3,
+      "lesson_title": "Sodda masalalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Yig'indisi 25 bo'lgan ikki sonning biri ikkinchisidan to'rt marta katta. Kichik son qaysi?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "20",
+        "D": "4"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 12,
+      "lesson_id": 3,
+      "lesson_title": "Sodda masalalar",
+      "topic_group_id": 1,
+      "topic_group": "Natural sonlar va arifmetik amallar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "84 m uzunlikdagi bir o'ram sim ikki bo'lakka shunday bo'lindiki, biri ikkinchisidan 5 marta uzun bo'ldi. Uzun bo'lakning uzunligi necha metr?",
+      "options": {
+        "A": "60",
+        "B": "42",
+        "C": "14",
+        "D": "70"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 13,
+      "lesson_id": 4,
+      "lesson_title": "Uzunlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bo'shliqni to'ldiring: 2 cm = ___ mm",
+      "options": {
+        "A": "12 mm",
+        "B": "20 mm",
+        "C": "2 mm",
+        "D": "200 mm"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 14,
+      "lesson_id": 4,
+      "lesson_title": "Uzunlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'shliqni to'ldiring: 8 km = ___ m",
+      "options": {
+        "A": "8 000 m",
+        "B": "80 000 m",
+        "C": "800 m",
+        "D": "80 m"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 15,
+      "lesson_id": 4,
+      "lesson_title": "Uzunlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Bo'shliqni to'ldiring: 9 dm 6 cm = ___ cm",
+      "options": {
+        "A": "96 cm",
+        "B": "906 cm",
+        "C": "960 cm",
+        "D": "15 cm"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 16,
+      "lesson_id": 4,
+      "lesson_title": "Uzunlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Bo'shliqni to'ldiring: 4 m 2 dm 5 cm = ___ cm",
+      "options": {
+        "A": "65 cm",
+        "B": "245 cm",
+        "C": "4 025 cm",
+        "D": "425 cm"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 17,
+      "lesson_id": 5,
+      "lesson_title": "Og'irlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bo'shliqni to'ldiring: 1 kg = ___ gr",
+      "options": {
+        "A": "100 gr",
+        "B": "10 000 gr",
+        "C": "1 000 gr",
+        "D": "10 gr"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 18,
+      "lesson_id": 5,
+      "lesson_title": "Og'irlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'shliqni to'ldiring: 4 t = ___ sr",
+      "options": {
+        "A": "400 sr",
+        "B": "4 000 sr",
+        "C": "40 sr",
+        "D": "4 sr"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 19,
+      "lesson_id": 5,
+      "lesson_title": "Og'irlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Bo'shliqni to'ldiring: 2 sr 5 kg = ___ kg",
+      "options": {
+        "A": "7 kg",
+        "B": "205 kg",
+        "C": "250 kg",
+        "D": "25 kg"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 20,
+      "lesson_id": 5,
+      "lesson_title": "Og'irlik o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Bo'shliqni to'ldiring: 2 t 3 sr 4 kg = ___ kg",
+      "options": {
+        "A": "234 kg",
+        "B": "2 034 kg",
+        "C": "2 340 kg",
+        "D": "2 304 kg"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 21,
+      "lesson_id": 6,
+      "lesson_title": "Vaqt o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bo'shliqni to'ldiring: 1 minut = ___ sekund",
+      "options": {
+        "A": "10 sekund",
+        "B": "60 sekund",
+        "C": "24 sekund",
+        "D": "100 sekund"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 22,
+      "lesson_id": 6,
+      "lesson_title": "Vaqt o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'shliqni to'ldiring: 3 soat = ___ minut",
+      "options": {
+        "A": "180 minut",
+        "B": "30 minut",
+        "C": "120 minut",
+        "D": "90 minut"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 23,
+      "lesson_id": 6,
+      "lesson_title": "Vaqt o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Bo'shliqni to'ldiring: 2 kun 10 soat = ___ soat",
+      "options": {
+        "A": "210 soat",
+        "B": "48 soat",
+        "C": "58 soat",
+        "D": "30 soat"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 24,
+      "lesson_id": 6,
+      "lesson_title": "Vaqt o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Ayiring: 10 yil 7 oy - 7 yil 10 oy = ___",
+      "options": {
+        "A": "2 yil 3 oy",
+        "B": "3 yil 9 oy",
+        "C": "3 yil 3 oy",
+        "D": "2 yil 9 oy"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 25,
+      "lesson_id": 7,
+      "lesson_title": "Qoldiqli bo'lish",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "75 ni 4 ga bo'lgandagi qoldiqni toping.",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "2",
+        "D": "0"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 26,
+      "lesson_id": 7,
+      "lesson_title": "Qoldiqli bo'lish",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "83 ni 2 ga bo'lgandagi to'liqsiz bo'linmani toping.",
+      "options": {
+        "A": "42",
+        "B": "43",
+        "C": "41",
+        "D": "40"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 27,
+      "lesson_id": 7,
+      "lesson_title": "Qoldiqli bo'lish",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Bitta choyshab tikishga 6 m mato sarflanadi. 200 m matodan nechta choyshab tikish mumkin va qancha mato ortib qoladi?",
+      "options": {
+        "A": "33 ta, 2 m ortadi",
+        "B": "33 ta, 4 m ortadi",
+        "C": "32 ta, 8 m ortadi",
+        "D": "34 ta, 2 m ortadi"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 28,
+      "lesson_id": 7,
+      "lesson_title": "Qoldiqli bo'lish",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Yig'ilgan 770 t bug'doy temir yo'l orqali tashiladi. Har bir yuk vagoniga 60 t bug'doy sig'adi. Hamma hosilni tashish uchun nechta vagon kerak va oxirgi vagonga qancha bug'doy yuklanadi?",
+      "options": {
+        "A": "13 vagon, 50 t",
+        "B": "14 vagon, 30 t",
+        "C": "12 vagon, 50 t",
+        "D": "13 vagon, 10 t"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 29,
+      "lesson_id": 8,
+      "lesson_title": "Yuza o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bo'shliqni to'ldiring: 1 cm2 = ___ mm2",
+      "options": {
+        "A": "20 mm2",
+        "B": "100 mm2",
+        "C": "10 mm2",
+        "D": "1 000 mm2"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 30,
+      "lesson_id": 8,
+      "lesson_title": "Yuza o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'shliqni to'ldiring: 1 ha = ___ m2",
+      "options": {
+        "A": "100 m2",
+        "B": "1 000 m2",
+        "C": "10 000 m2",
+        "D": "100 000 m2"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 31,
+      "lesson_id": 8,
+      "lesson_title": "Yuza o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Bo'shliqni to'ldiring: 3 m2 6 dm2 = ___ dm2",
+      "options": {
+        "A": "36 dm2",
+        "B": "306 dm2",
+        "C": "3 006 dm2",
+        "D": "360 dm2"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 32,
+      "lesson_id": 8,
+      "lesson_title": "Yuza o'lchov birliklari",
+      "topic_group_id": 3,
+      "topic_group": "O'lchov birliklari",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Bo'shliqni to'ldiring: 5 ha 10 ar = ___ m2",
+      "options": {
+        "A": "5 010 m2",
+        "B": "510 000 m2",
+        "C": "51 000 m2",
+        "D": "50 100 m2"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 33,
+      "lesson_id": 9,
+      "lesson_title": "To'g'ri to'rtburchak",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Tomoni 8 sm bo'lgan kvadratning perimetrini toping.",
+      "options": {
+        "A": "16 sm",
+        "B": "64 sm",
+        "C": "24 sm",
+        "D": "32 sm"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 34,
+      "lesson_id": 9,
+      "lesson_title": "To'g'ri to'rtburchak",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "To'g'ri to'rtburchakning tomonlari 12 sm va 17 sm. Uning perimetrini toping.",
+      "options": {
+        "A": "29 sm",
+        "B": "48 sm",
+        "C": "58 sm",
+        "D": "204 sm"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 35,
+      "lesson_id": 9,
+      "lesson_title": "To'g'ri to'rtburchak",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "To'g'ri to'rtburchakning perimetri 72 sm, bir tomoni 14 sm ga teng. Uning ikkinchi tomonini toping.",
+      "options": {
+        "A": "36 sm",
+        "B": "22 sm",
+        "C": "58 sm",
+        "D": "29 sm"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 36,
+      "lesson_id": 9,
+      "lesson_title": "To'g'ri to'rtburchak",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "To'g'ri to'rtburchakning perimetri 48 sm, bir tomoni 19 sm ga teng. Uning yuzasini toping.",
+      "options": {
+        "A": "100 sm2",
+        "B": "190 sm2",
+        "C": "76 sm2",
+        "D": "95 sm2"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 37,
+      "lesson_id": 10,
+      "lesson_title": "Uchburchaklar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Teng tomonli uchburchakning tomoni 14 dm bo'lsa, uning perimetrini toping.",
+      "options": {
+        "A": "42 dm",
+        "B": "28 dm",
+        "C": "14 dm",
+        "D": "56 dm"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 38,
+      "lesson_id": 10,
+      "lesson_title": "Uchburchaklar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Teng yonli uchburchakning yon tomoni 12 cm, asosi 8 cm bo'lsa, uning perimetrini toping.",
+      "options": {
+        "A": "20 cm",
+        "B": "32 cm",
+        "C": "28 cm",
+        "D": "24 cm"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 39,
+      "lesson_id": 10,
+      "lesson_title": "Uchburchaklar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Perimetri 17 cm bo'lgan uchburchakning ikki tomoni 4 cm va 7 cm ga teng. Uchinchi tomonini toping.",
+      "options": {
+        "A": "6 cm",
+        "B": "5 cm",
+        "C": "11 cm",
+        "D": "7 cm"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 40,
+      "lesson_id": 10,
+      "lesson_title": "Uchburchaklar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Teng yonli uchburchakning Perimetri 25 cm. Uning yon tomoni asosidan 2 cm uzun bo'lsa, uning asosini toping.",
+      "options": {
+        "A": "11 cm",
+        "B": "8 cm",
+        "C": "7 cm",
+        "D": "9 cm"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 41,
+      "lesson_id": 11,
+      "lesson_title": "Murakkabroq tenglamalar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Tenglamani yeching: 2a + 160 = 340",
+      "options": {
+        "A": "180",
+        "B": "80",
+        "C": "90",
+        "D": "100"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 42,
+      "lesson_id": 11,
+      "lesson_title": "Murakkabroq tenglamalar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Tenglamani yeching: x + 2x = 255",
+      "options": {
+        "A": "85",
+        "B": "75",
+        "C": "127",
+        "D": "510"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 43,
+      "lesson_id": 11,
+      "lesson_title": "Murakkabroq tenglamalar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Tenglamani yeching: 5a + 200 = 2a + 455",
+      "options": {
+        "A": "95",
+        "B": "85",
+        "C": "65",
+        "D": "75"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 44,
+      "lesson_id": 11,
+      "lesson_title": "Murakkabroq tenglamalar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Tenglamani yeching: (x + 153) + 168 = 487",
+      "options": {
+        "A": "186",
+        "B": "166",
+        "C": "808",
+        "D": "176"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 45,
+      "lesson_id": 12,
+      "lesson_title": "Harakatga doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Mototsiklchi 40 km/h tezlik bilan yurdi. U 2 soatda qancha masofani bosib o'tadi?",
+      "options": {
+        "A": "42 km",
+        "B": "20 km",
+        "C": "60 km",
+        "D": "80 km"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 46,
+      "lesson_id": 12,
+      "lesson_title": "Harakatga doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Velosipedchi bir xil tezlik bilan yurib, 39 km masofani 3 soatda bosib o'tdi. Velosipedchi qanday tezlik bilan harakatlangan?",
+      "options": {
+        "A": "36 km/h",
+        "B": "13 km/h",
+        "C": "117 km/h",
+        "D": "12 km/h"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 47,
+      "lesson_id": 12,
+      "lesson_title": "Harakatga doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Avtomobil 78 km/h tezlik bilan 4 soat, 66 km/h tezlik bilan 5 soat yurdi. Avtomobil jami qancha masofa yurgan?",
+      "options": {
+        "A": "330 km",
+        "B": "642 km",
+        "C": "144 km",
+        "D": "624 km"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 48,
+      "lesson_id": 12,
+      "lesson_title": "Harakatga doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Spark mashinasi 65 km/h tezlik bilan 2 soat yurdi. Keyin undan 17 km/h ko'proq tezlik bilan 4 soat yurdi. Spark jami qancha masofa yurgan?",
+      "options": {
+        "A": "390 km",
+        "B": "130 km",
+        "C": "458 km",
+        "D": "328 km"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 49,
+      "lesson_id": 13,
+      "lesson_title": "Harakatning nisbiyligi (qarama-qarshi)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Velosipedchi 15 km/h va piyoda 6 km/h tezlik bilan bir-birlari tomon harakatlanyapti. Ularning bir-biriga nisbatan tezligi qancha?",
+      "options": {
+        "A": "11 km/h",
+        "B": "9 km/h",
+        "C": "21 km/h",
+        "D": "90 km/h"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 50,
+      "lesson_id": 13,
+      "lesson_title": "Harakatning nisbiyligi (qarama-qarshi)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Anvar va Sobir bir-biri tomon 5 km/h va 4 km/h tezlikda harakatlanib, 3 soatda uchrashishdi. Dastlab ularning orasida qancha masofa bo'lgan?",
+      "options": {
+        "A": "12 km",
+        "B": "20 km",
+        "C": "9 km",
+        "D": "27 km"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 51,
+      "lesson_id": 13,
+      "lesson_title": "Harakatning nisbiyligi (qarama-qarshi)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Oralaridagi masofa 24 km bo'lgan ikki qishloqdan bir vaqtda bir-biriga qarab 3 km/h va 5 km/h tezlikda ikkita yo'lovchi yo'lga chiqdi. Ular necha soatdan keyin uchrashishadi?",
+      "options": {
+        "A": "4 soat",
+        "B": "2 soat",
+        "C": "3 soat",
+        "D": "8 soat"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 52,
+      "lesson_id": 13,
+      "lesson_title": "Harakatning nisbiyligi (qarama-qarshi)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Oralaridagi masofa 108 km bo'lgan ikki velosipedchi bir vaqtda bir-biriga qarab yo'lga chiqdi va 3 soatdan keyin uchrashishdi. Birinchi velosipedchi tezligi ikkinchisinikidan 4 km/h ortiq bo'lsa, birinchi velosipedchining tezligini toping.",
+      "options": {
+        "A": "20 km/h",
+        "B": "36 km/h",
+        "C": "18 km/h",
+        "D": "16 km/h"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 53,
+      "lesson_id": 14,
+      "lesson_title": "Harakatning nisbiyligi (bir yo'nalish)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Velosipedchi 15 km/h va piyoda 6 km/h tezlik bilan bir yo'nalishda harakatlanyapti. Ularning bir-biriga nisbatan tezligi qancha?",
+      "options": {
+        "A": "21 km/h",
+        "B": "90 km/h",
+        "C": "11 km/h",
+        "D": "9 km/h"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 54,
+      "lesson_id": 14,
+      "lesson_title": "Harakatning nisbiyligi (bir yo'nalish)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Anvar va Sobir bir manzildan 5 km/h va 4 km/h tezlikda bir yo'nalishda harakatlana boshlashdi. 3 soatdan so'ng ular orasidagi masofa qancha bo'ladi?",
+      "options": {
+        "A": "27 km",
+        "B": "3 km",
+        "C": "12 km",
+        "D": "1 km"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 55,
+      "lesson_id": 14,
+      "lesson_title": "Harakatning nisbiyligi (bir yo'nalish)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Oralaridagi masofa 24 km bo'lgan ikki avtobus bir yo'nalishda harakatlanmoqda. Oldindagi avtobusning tezligi 56 km/h, ortdagisiniki esa 60 km/h. Necha soatda ortdagi avtobus oldindagi avtobusga yetib oladi?",
+      "options": {
+        "A": "6 soat",
+        "B": "4 soat",
+        "C": "2 soat",
+        "D": "12 soat"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 56,
+      "lesson_id": 14,
+      "lesson_title": "Harakatning nisbiyligi (bir yo'nalish)",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Tezligi 80 km/h bo'lgan yengil mashina o'zidan 60 km uzoqlikda ketayotgan yuk mashinasini 4 soatda quvib yetdi. Yuk mashinasining tezligini toping.",
+      "options": {
+        "A": "65 km/h",
+        "B": "95 km/h",
+        "C": "20 km/h",
+        "D": "15 km/h"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 57,
+      "lesson_id": 15,
+      "lesson_title": "Suvdagi harakat",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Motorli qayiq turg'un suvda 3 m/sek tezlikda harakatlanyapti. U 1 daqiqada qancha masofa bosib o'tadi?",
+      "options": {
+        "A": "3 m",
+        "B": "30 m",
+        "C": "180 m",
+        "D": "60 m"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 58,
+      "lesson_id": 15,
+      "lesson_title": "Suvdagi harakat",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Qayiqning o'z tezligi 5 km/soat, daryo oqimining tezligi 2 km/soat. Qayiq oqim bo'ylab suzayotgan bo'lsa, uning umumiy tezligi qancha bo'ladi?",
+      "options": {
+        "A": "7 km/soat",
+        "B": "10 km/soat",
+        "C": "2 km/soat",
+        "D": "3 km/soat"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 59,
+      "lesson_id": 15,
+      "lesson_title": "Suvdagi harakat",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Daryo oqimi bo'ylab harakatlanayotgan katerning turg'un suvdagi tezligi 50 km/soat. Agar kater 5 soatda 330 km masofani bosib o'tsa, daryo oqimining tezligini toping.",
+      "options": {
+        "A": "6 km/soat",
+        "B": "66 km/soat",
+        "C": "10 km/soat",
+        "D": "16 km/soat"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 60,
+      "lesson_id": 15,
+      "lesson_title": "Suvdagi harakat",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Katerning oqim bo'ylab tezligi 56 km/soat, oqimga qarshi tezligi esa 44 km/soat. Katerning turg'un suvdagi tezligi va daryo oqimining tezligini toping.",
+      "options": {
+        "A": "turg'un 56, oqim 6",
+        "B": "turg'un 50, oqim 6",
+        "C": "turg'un 44, oqim 12",
+        "D": "turg'un 100, oqim 12"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 61,
+      "lesson_id": 16,
+      "lesson_title": "O'rtacha tezlikka doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "O'quvchi 2 soatda 10 km yo'l bosdi. O'quvchining o'rtacha tezligini toping.",
+      "options": {
+        "A": "12 km/soat",
+        "B": "5 km/soat",
+        "C": "8 km/soat",
+        "D": "20 km/soat"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 62,
+      "lesson_id": 16,
+      "lesson_title": "O'rtacha tezlikka doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Avtobus 2 soatda 90 km yo'l bosdi, keyingi 3 soatda esa 150 km yo'l bosdi. Avtobusning butun yo'ldagi o'rtacha tezligini toping.",
+      "options": {
+        "A": "60 km/soat",
+        "B": "120 km/soat",
+        "C": "48 km/soat",
+        "D": "40 km/soat"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 63,
+      "lesson_id": 16,
+      "lesson_title": "O'rtacha tezlikka doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Piyoda birinchi 2 soatda 8 km/soat tezlikda yurdi, keyingi 2 soatda esa 6 km/soat tezlikda. Piyodaning o'rtacha tezligini toping.",
+      "options": {
+        "A": "7 km/soat",
+        "B": "8 km/soat",
+        "C": "14 km/soat",
+        "D": "28 km/soat"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 64,
+      "lesson_id": 16,
+      "lesson_title": "O'rtacha tezlikka doir masalalar",
+      "topic_group_id": 6,
+      "topic_group": "Harakatga doir masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Velosipedchi butun yo'lning 30 kilometrini 2 soatda, qolganini 3 soatda bosib o'tdi. Agar velosipedchining harakat davomidagi o'rtacha tezligi 21 km/soat bo'lgan bo'lsa, butun yo'lning uzunligini toping.",
+      "options": {
+        "A": "75 km",
+        "B": "63 km",
+        "C": "90 km",
+        "D": "105 km"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 65,
+      "lesson_id": 17,
+      "lesson_title": "Tenglama tuzib yechiladigan masalalar",
+      "topic_group_id": 5,
+      "topic_group": "Matnli masalalar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bochkadan 214 litr suv olingandan so'ng, unda 391 litr suv qoldi. Bochkada qancha suv bo'lgan?",
+      "options": {
+        "A": "615 litr",
+        "B": "177 litr",
+        "C": "595 litr",
+        "D": "605 litr"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 66,
+      "lesson_id": 17,
+      "lesson_title": "Tenglama tuzib yechiladigan masalalar",
+      "topic_group_id": 5,
+      "topic_group": "Matnli masalalar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Mubina va Alisherda jami 75 ta daftar bor. Mubinaning daftarlari Alishernikidan 15 ta ko'p. Alisherda nechta daftar bor?",
+      "options": {
+        "A": "30 ta",
+        "B": "60 ta",
+        "C": "45 ta",
+        "D": "15 ta"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 67,
+      "lesson_id": 17,
+      "lesson_title": "Tenglama tuzib yechiladigan masalalar",
+      "topic_group_id": 5,
+      "topic_group": "Matnli masalalar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Mahmud kitobning beshdan bir qismini o'qigandan so'ng, kitobning yana 48 beti qoldi. Kitob necha betli?",
+      "options": {
+        "A": "240 bet",
+        "B": "53 bet",
+        "C": "60 bet",
+        "D": "96 bet"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 68,
+      "lesson_id": 17,
+      "lesson_title": "Tenglama tuzib yechiladigan masalalar",
+      "topic_group_id": 5,
+      "topic_group": "Matnli masalalar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "3 ta javonda jami 72 ta kitob bor. 2-javonda 1-sidan 15 ta ko'p, 3-sida esa 9 ta ko'p kitob bor. 2-javonda nechta kitob bor?",
+      "options": {
+        "A": "40 ta",
+        "B": "31 ta",
+        "C": "25 ta",
+        "D": "16 ta"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 69,
+      "lesson_id": 18,
+      "lesson_title": "Oddiy kasr",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "10 ning 1/5 qismini toping.",
+      "options": {
+        "A": "5",
+        "B": "50",
+        "C": "1",
+        "D": "2"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 70,
+      "lesson_id": 18,
+      "lesson_title": "Oddiy kasr",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Uzunligi 240 m bo'lgan simning 5/6 qismi olindi. Necha metr sim olingan?",
+      "options": {
+        "A": "200 m",
+        "B": "40 m",
+        "C": "288 m",
+        "D": "120 m"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 71,
+      "lesson_id": 18,
+      "lesson_title": "Oddiy kasr",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Anvar tovoqdagi quymoqlarning 9 tasini yedi. Bu esa jami quymoqlarning 3/5 qismiga to'g'ri keladi. Tovoqda jami qancha quymoq bo'lgan?",
+      "options": {
+        "A": "5 ta",
+        "B": "27 ta",
+        "C": "45 ta",
+        "D": "15 ta"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 72,
+      "lesson_id": 18,
+      "lesson_title": "Oddiy kasr",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Hovuzda 600 litr suv bor edi. Tushgacha undagi suvning 1/6 qismi, tushdan keyin qolgan suvning 2/5 qismi, kechda esa qolgan suvning yarmi ishlatildi. Hovuzda qancha suv qoldi?",
+      "options": {
+        "A": "200 litr",
+        "B": "250 litr",
+        "C": "300 litr",
+        "D": "150 litr"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 73,
+      "lesson_id": 19,
+      "lesson_title": "To'g'ri, noto'g'ri va aralash kasrlar. Kasrni qisqartirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Quyidagi kasrlardan qaysi biri to'g'ri kasr (qiymati 1 dan kichik)?",
+      "options": {
+        "A": "7/4",
+        "B": "9/9",
+        "C": "5/3",
+        "D": "2/3"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 74,
+      "lesson_id": 19,
+      "lesson_title": "To'g'ri, noto'g'ri va aralash kasrlar. Kasrni qisqartirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "8/4 kasrni qisqartiring (eng sodda ko'rinishga keltiring).",
+      "options": {
+        "A": "2",
+        "B": "1/2",
+        "C": "2/4",
+        "D": "4/2"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 75,
+      "lesson_id": 19,
+      "lesson_title": "To'g'ri, noto'g'ri va aralash kasrlar. Kasrni qisqartirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "9/4 noto'g'ri kasrni aralash son ko'rinishida ifodalang.",
+      "options": {
+        "A": "4 1/9",
+        "B": "2 1/4",
+        "C": "1 1/4",
+        "D": "2 1/2"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 76,
+      "lesson_id": 19,
+      "lesson_title": "To'g'ri, noto'g'ri va aralash kasrlar. Kasrni qisqartirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "2 3/5 aralash sonni noto'g'ri kasr ko'rinishida ifodalang.",
+      "options": {
+        "A": "10/5",
+        "B": "11/5",
+        "C": "13/5",
+        "D": "6/5"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 77,
+      "lesson_id": 20,
+      "lesson_title": "Oddiy kasrlarni taqqoslash",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bir xil maxrajli kasrlardan qaysi biri katta: 1/3 yoki 2/3?",
+      "options": {
+        "A": "ikkalasi teng",
+        "B": "aniqlab bo'lmaydi",
+        "C": "2/3",
+        "D": "1/3"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 78,
+      "lesson_id": 20,
+      "lesson_title": "Oddiy kasrlarni taqqoslash",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bir xil suratli kasrlarni taqqoslang: 1/3 va 1/2. Qaysi biri katta?",
+      "options": {
+        "A": "1/3",
+        "B": "ikkalasi teng",
+        "C": "aniqlab bo'lmaydi",
+        "D": "1/2"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 79,
+      "lesson_id": 20,
+      "lesson_title": "Oddiy kasrlarni taqqoslash",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "5/6 va 7/9 kasrlarni umumiy maxrajga (18) keltirib taqqoslang. Qaysi biri katta?",
+      "options": {
+        "A": "7/9",
+        "B": "ikkalasi teng",
+        "C": "5/6",
+        "D": "aniqlab bo'lmaydi"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 80,
+      "lesson_id": 20,
+      "lesson_title": "Oddiy kasrlarni taqqoslash",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "5/8 va 7/12 kasrlarni umumiy maxrajga (24) keltirib taqqoslang. Qaysi biri katta?",
+      "options": {
+        "A": "5/8",
+        "B": "7/12",
+        "C": "aniqlab bo'lmaydi",
+        "D": "ikkalasi teng"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 81,
+      "lesson_id": 21,
+      "lesson_title": "Bir xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Hisoblang: 1/3 + 1/3",
+      "options": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "1/6",
+        "D": "2/6"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 82,
+      "lesson_id": 21,
+      "lesson_title": "Bir xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 2/7 + 3/7",
+      "options": {
+        "A": "5/14",
+        "B": "5/7",
+        "C": "6/7",
+        "D": "1/7"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 83,
+      "lesson_id": 21,
+      "lesson_title": "Bir xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Hisoblang: 1 1/3 + 2 1/3",
+      "options": {
+        "A": "3 2/3",
+        "B": "2 2/3",
+        "C": "3 1/3",
+        "D": "3 2/6"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 84,
+      "lesson_id": 21,
+      "lesson_title": "Bir xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Hisoblang: 7 1/4 - 3 3/4",
+      "options": {
+        "A": "3 2/4",
+        "B": "4 1/2",
+        "C": "4 2/4",
+        "D": "3 1/2"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 85,
+      "lesson_id": 22,
+      "lesson_title": "Har xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Hisoblang: 1/2 + 1/3",
+      "options": {
+        "A": "2/6",
+        "B": "1/6",
+        "C": "2/5",
+        "D": "5/6"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 86,
+      "lesson_id": 22,
+      "lesson_title": "Har xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 1/2 + 1/4",
+      "options": {
+        "A": "1/6",
+        "B": "3/4",
+        "C": "2/6",
+        "D": "2/4"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 87,
+      "lesson_id": 22,
+      "lesson_title": "Har xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Hisoblang: 2/3 - 2/5",
+      "options": {
+        "A": "4/15",
+        "B": "0/15",
+        "C": "4/8",
+        "D": "1/2"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 88,
+      "lesson_id": 22,
+      "lesson_title": "Har xil maxrajli kasrlarni qo'shish va ayirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Hisoblang: 4/3 - 1/4 - 1/2",
+      "options": {
+        "A": "1/12",
+        "B": "2/3",
+        "C": "5/12",
+        "D": "7/12"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 89,
+      "lesson_id": 23,
+      "lesson_title": "Oddiy kasrlarni ko'paytirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Hisoblang: 1/2 · 3/4",
+      "options": {
+        "A": "4/8",
+        "B": "3/6",
+        "C": "4/6",
+        "D": "3/8"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 90,
+      "lesson_id": 23,
+      "lesson_title": "Oddiy kasrlarni ko'paytirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 2 · 3/5",
+      "options": {
+        "A": "6/5",
+        "B": "6/10",
+        "C": "2/5",
+        "D": "5/5"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 91,
+      "lesson_id": 23,
+      "lesson_title": "Oddiy kasrlarni ko'paytirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Aralash sonlarni ko'paytiring: 1 1/2 · 2 1/3",
+      "options": {
+        "A": "3 1/6",
+        "B": "3 1/2",
+        "C": "2 1/2",
+        "D": "2 1/6"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 92,
+      "lesson_id": 23,
+      "lesson_title": "Oddiy kasrlarni ko'paytirish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Supermarketdagi 4 ta haltachada 1/4 kg dan shokolad bor. Haltachalarda hammasi bo'lib qancha kg shokolad bor?",
+      "options": {
+        "A": "1/4 kg",
+        "B": "1 kg",
+        "C": "4/4 kg",
+        "D": "1/16 kg"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 93,
+      "lesson_id": 24,
+      "lesson_title": "Oddiy kasrlarni bo'lish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "3/4 soniga teskari (o'zaro teskari) son qaysi?",
+      "options": {
+        "A": "4/4",
+        "B": "3/4",
+        "C": "4/3",
+        "D": "1/4"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 94,
+      "lesson_id": 24,
+      "lesson_title": "Oddiy kasrlarni bo'lish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 6/5 : 3/5",
+      "options": {
+        "A": "18/25",
+        "B": "1/2",
+        "C": "3/5",
+        "D": "2"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 95,
+      "lesson_id": 24,
+      "lesson_title": "Oddiy kasrlarni bo'lish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Aralash sonni bo'ling: 6 3/4 : 5/2",
+      "options": {
+        "A": "2 7/10",
+        "B": "3 7/10",
+        "C": "2 1/2",
+        "D": "16 7/8"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 96,
+      "lesson_id": 24,
+      "lesson_title": "Oddiy kasrlarni bo'lish",
+      "topic_group_id": 7,
+      "topic_group": "Oddiy kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Bolalarga 12 ta pitsa teng taqsimlab berildi. Har bir bola 2/3 bo'lak pitsa oldi. Pitsa necha bolaga taqsimlab berilgan?",
+      "options": {
+        "A": "24 ta",
+        "B": "8 ta",
+        "C": "18 ta",
+        "D": "12 ta"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 97,
+      "lesson_id": 25,
+      "lesson_title": "O'nli kasr",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "8 butun o'ndan 3 sonini o'nli kasr ko'rinishida qanday yoziladi?",
+      "options": {
+        "A": "83,0",
+        "B": "8,03",
+        "C": "8,3",
+        "D": "0,83"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 98,
+      "lesson_id": 25,
+      "lesson_title": "O'nli kasr",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'linmani o'nli kasr ko'rinishida yozing: 28 : 100 = ?",
+      "options": {
+        "A": "0,028",
+        "B": "28,0",
+        "C": "0,28",
+        "D": "2,8"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 99,
+      "lesson_id": 25,
+      "lesson_title": "O'nli kasr",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "O'nli kasrlarni taqqoslang: 23,54 va 16,9. To'g'ri javobni belgilang.",
+      "options": {
+        "A": "Taqqoslab bo'lmaydi",
+        "B": "23,54 = 16,9",
+        "C": "23,54 < 16,9",
+        "D": "23,54 > 16,9"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 100,
+      "lesson_id": 25,
+      "lesson_title": "O'nli kasr",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Quyidagi sonlarni o'sish tartibida joylashtirsak, eng kichigi qaysi bo'ladi: 0,98; 0,02; 0,302; 0,022; 0,0302?",
+      "options": {
+        "A": "0,0302",
+        "B": "0,022",
+        "C": "0,302",
+        "D": "0,02"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 101,
+      "lesson_id": 26,
+      "lesson_title": "O'nli kasrlarni qo'shish va ayirish. Yaxlitlash",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Qo'shishni bajaring: 2,1 + 3,4 = ?",
+      "options": {
+        "A": "5,6",
+        "B": "5,4",
+        "C": "5,5",
+        "D": "6,5"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 102,
+      "lesson_id": 26,
+      "lesson_title": "O'nli kasrlarni qo'shish va ayirish. Yaxlitlash",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "33,4623 sonini o'ndan birlar xonasigacha yaxlitlang.",
+      "options": {
+        "A": "33,5",
+        "B": "33,4",
+        "C": "34,0",
+        "D": "33,46"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 103,
+      "lesson_id": 26,
+      "lesson_title": "O'nli kasrlarni qo'shish va ayirish. Yaxlitlash",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Hisoblang: 2,6 + 3,8 + 3,7 + 0,5 = ?",
+      "options": {
+        "A": "11,6",
+        "B": "10,6",
+        "C": "9,6",
+        "D": "10,5"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 104,
+      "lesson_id": 26,
+      "lesson_title": "O'nli kasrlarni qo'shish va ayirish. Yaxlitlash",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Uchburchakning bir tomoni 83,6 cm, ikkinchi tomoni birinchisidan 14,8 cm, uchinchisi ikkinchisidan esa 8,6 cm ortiq. Uchburchakning perimetrini toping.",
+      "options": {
+        "A": "304,4 cm",
+        "B": "289,0 cm",
+        "C": "281,0 cm",
+        "D": "287,2 cm"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 105,
+      "lesson_id": 27,
+      "lesson_title": "O'nli kasrlarni ko'paytirish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Ko'paytmani hisoblang: 0,2 ⋅ 4 = ?",
+      "options": {
+        "A": "8",
+        "B": "1,2",
+        "C": "0,08",
+        "D": "0,8"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 106,
+      "lesson_id": 27,
+      "lesson_title": "O'nli kasrlarni ko'paytirish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Ko'paytmani hisoblang: 6,3 ⋅ 2,5 = ?",
+      "options": {
+        "A": "16,75",
+        "B": "15,75",
+        "C": "157,5",
+        "D": "1,575"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 107,
+      "lesson_id": 27,
+      "lesson_title": "O'nli kasrlarni ko'paytirish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Poyezd 95 km/soat tezlik bilan 2,5 soatda necha kilometr yuradi?",
+      "options": {
+        "A": "230,5 km",
+        "B": "240 km",
+        "C": "237,5 km",
+        "D": "190 km"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 108,
+      "lesson_id": 27,
+      "lesson_title": "O'nli kasrlarni ko'paytirish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "1 kg \"Alanga\" guruchining narxi 13,5 ming so'm. 17,5 kg shunday guruchning narxini toping.",
+      "options": {
+        "A": "243,75 ming so'm",
+        "B": "236,25 ming so'm",
+        "C": "235,5 ming so'm",
+        "D": "231,25 ming so'm"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 109,
+      "lesson_id": 28,
+      "lesson_title": "O'nli kasrlarni bo'lish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Bo'lishni bajaring: 7,6 : 2 = ?",
+      "options": {
+        "A": "3,2",
+        "B": "3,4",
+        "C": "4,8",
+        "D": "3,8"
+      },
+      "correct": "D",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 110,
+      "lesson_id": 28,
+      "lesson_title": "O'nli kasrlarni bo'lish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Bo'lishni bajaring: 25,2 : 1,2 = ?",
+      "options": {
+        "A": "2,1",
+        "B": "12",
+        "C": "21",
+        "D": "210"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 111,
+      "lesson_id": 28,
+      "lesson_title": "O'nli kasrlarni bo'lish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Idishda 13,5 L sharbat bor. Uni 3 ta bankaga teng quyildi. Har bir bankada qancha sharbat bo'ldi?",
+      "options": {
+        "A": "3,5 L",
+        "B": "4 L",
+        "C": "4,5 L",
+        "D": "5,5 L"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 112,
+      "lesson_id": 28,
+      "lesson_title": "O'nli kasrlarni bo'lish",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "To'g'ri to'rtburchakning yuzasi 300,9 m2, bo'yi 20 m. Uning perimetrini toping.",
+      "options": {
+        "A": "70,09 m",
+        "B": "70,9 m",
+        "C": "60,18 m",
+        "D": "35,045 m"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 113,
+      "lesson_id": 29,
+      "lesson_title": "O'nli kasrlar ustida amallar",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Agar a = 0,6 bo'lsa, 3,8a + 1,7a – 5,4a ni hisoblang.",
+      "options": {
+        "A": "0,6",
+        "B": "0,06",
+        "C": "0,1",
+        "D": "0,16"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 114,
+      "lesson_id": 29,
+      "lesson_title": "O'nli kasrlar ustida amallar",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Tenglamani yeching: 1,7x + 88,42 = 94,2",
+      "options": {
+        "A": "x = 4,3",
+        "B": "x = 2,4",
+        "C": "x = 5,8",
+        "D": "x = 3,4"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 115,
+      "lesson_id": 29,
+      "lesson_title": "O'nli kasrlar ustida amallar",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Tenglamani yeching: 9x + 6x – 0,15 = 6,15",
+      "options": {
+        "A": "x = 4,2",
+        "B": "x = 0,15",
+        "C": "x = 0,4",
+        "D": "x = 0,42"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 116,
+      "lesson_id": 29,
+      "lesson_title": "O'nli kasrlar ustida amallar",
+      "topic_group_id": 8,
+      "topic_group": "O'nli kasrlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Poyezd 2,8 soatda 135,8 km masofani bosib o'tdi. U shunday tezlikda 6,2 soat harakatlansa necha kilometr masofani bosib o'tadi?",
+      "options": {
+        "A": "48,5 km",
+        "B": "310,5 km",
+        "C": "300,7 km",
+        "D": "290 km"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 117,
+      "lesson_id": 30,
+      "lesson_title": "Nisbat va proporsiya",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Ikki sonning nisbati 1 : 2 kabi. Ularning kichigi 6 ga teng. Katta sonni toping.",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "3",
+        "D": "8"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 118,
+      "lesson_id": 30,
+      "lesson_title": "Nisbat va proporsiya",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Proporsiyaning noma'lum hadini toping: 4 : 7 = x : 21",
+      "options": {
+        "A": "x = 14",
+        "B": "x = 9",
+        "C": "x = 12",
+        "D": "x = 3"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 119,
+      "lesson_id": 30,
+      "lesson_title": "Nisbat va proporsiya",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Avgust oyida libos do'koni 460 ta ko'ylak sotdi, qora va oq rangli ko'ylaklar soni nisbati 3 : 7. Nechta oq rangli ko'ylak sotilgan?",
+      "options": {
+        "A": "196",
+        "B": "230",
+        "C": "138",
+        "D": "322"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 120,
+      "lesson_id": 30,
+      "lesson_title": "Nisbat va proporsiya",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Podshoh tojining og'irligi 980 g bo'lib, oltin va platinadan yasalgan. Tojda oltin va platina massalari nisbati 4 : 3 ga teng. Tojni yasash uchun qancha oltin ishlatilgan?",
+      "options": {
+        "A": "640 g",
+        "B": "490 g",
+        "C": "560 g",
+        "D": "420 g"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 121,
+      "lesson_id": 31,
+      "lesson_title": "Foiz",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "10 ning 10% ini toping.",
+      "options": {
+        "A": "100",
+        "B": "1",
+        "C": "0,1",
+        "D": "10"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 122,
+      "lesson_id": 31,
+      "lesson_title": "Foiz",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "20 ning 15% ini toping.",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "5",
+        "D": "4"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 123,
+      "lesson_id": 31,
+      "lesson_title": "Foiz",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Qaysi sonning 12% i 24 ga teng?",
+      "options": {
+        "A": "288",
+        "B": "200",
+        "C": "150",
+        "D": "120"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 124,
+      "lesson_id": 31,
+      "lesson_title": "Foiz",
+      "topic_group_id": 9,
+      "topic_group": "Nisbat, proporsiya va foiz",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Sayyoh butun yo'lning 30% ini bosib o'tdi. Shundan so'ng manzilgacha yana 56 km qolgani ma'lum bo'ldi. Jami yo'l necha km?",
+      "options": {
+        "A": "186,7 km",
+        "B": "73 km",
+        "C": "80 km",
+        "D": "168 km"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 125,
+      "lesson_id": 32,
+      "lesson_title": "Sonning darajasi",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Hisoblang: 4² = ?",
+      "options": {
+        "A": "12",
+        "B": "8",
+        "C": "16",
+        "D": "44"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 126,
+      "lesson_id": 32,
+      "lesson_title": "Sonning darajasi",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Hisoblang: 6³ – 5³ = ?",
+      "options": {
+        "A": "61",
+        "B": "31",
+        "C": "91",
+        "D": "11"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 127,
+      "lesson_id": 32,
+      "lesson_title": "Sonning darajasi",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Hisoblang: (3 + 5)² = ?",
+      "options": {
+        "A": "30",
+        "B": "64",
+        "C": "34",
+        "D": "16"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 128,
+      "lesson_id": 32,
+      "lesson_title": "Sonning darajasi",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "a² = 169 va b² = 10000 bo'lsa, a + b = ?",
+      "options": {
+        "A": "23",
+        "B": "130",
+        "C": "113",
+        "D": "10169"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 129,
+      "lesson_id": 33,
+      "lesson_title": "Rim raqamlari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "VI rim raqami qaysi natural songa teng?",
+      "options": {
+        "A": "6",
+        "B": "11",
+        "C": "4",
+        "D": "5"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 130,
+      "lesson_id": 33,
+      "lesson_title": "Rim raqamlari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "IX rim raqami qaysi natural songa teng?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "11",
+        "D": "9"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 131,
+      "lesson_id": 33,
+      "lesson_title": "Rim raqamlari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "LXIII rim raqami qaysi natural songa teng?",
+      "options": {
+        "A": "63",
+        "B": "53",
+        "C": "73",
+        "D": "68"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 132,
+      "lesson_id": 33,
+      "lesson_title": "Rim raqamlari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Hisoblang: XLII – XVI ni rim raqamlari yordamida hisoblab, natural son ko'rinishida yozing.",
+      "options": {
+        "A": "36",
+        "B": "16",
+        "C": "24",
+        "D": "26"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 133,
+      "lesson_id": 34,
+      "lesson_title": "Maxsus savollar",
+      "topic_group_id": 14,
+      "topic_group": "Aralash / Maxsus mavzular",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "10 dan 20 gacha nechta son bor?",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "9",
+        "D": "10"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 134,
+      "lesson_id": 34,
+      "lesson_title": "Maxsus savollar",
+      "topic_group_id": 14,
+      "topic_group": "Aralash / Maxsus mavzular",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "10 va 20 orasida nechta son bor?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "8",
+        "D": "9"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 135,
+      "lesson_id": 34,
+      "lesson_title": "Maxsus savollar",
+      "topic_group_id": 14,
+      "topic_group": "Aralash / Maxsus mavzular",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Ikki xonali sonlar nechta?",
+      "options": {
+        "A": "90",
+        "B": "89",
+        "C": "100",
+        "D": "99"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 136,
+      "lesson_id": 34,
+      "lesson_title": "Maxsus savollar",
+      "topic_group_id": 14,
+      "topic_group": "Aralash / Maxsus mavzular",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Ko'cha bo'ylab 10 ta yo'lchiroq o'rnatilgan. Har bir yo'lchiroq orasi 30 m. 1-va oxirgi yo'lchiroq orasidagi masofani toping.",
+      "options": {
+        "A": "300 m",
+        "B": "270 m",
+        "C": "330 m",
+        "D": "240 m"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 137,
+      "lesson_id": 35,
+      "lesson_title": "Sodda geometrik shakllar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Har qanday ikki nuqtadan nechta to'g'ri chiziq o'tkazish mumkin?",
+      "options": {
+        "A": "2 ta",
+        "B": "1 ta",
+        "C": "Cheksiz ko'p",
+        "D": "Hech qanday"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 138,
+      "lesson_id": 35,
+      "lesson_title": "Sodda geometrik shakllar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "C nuqta AB kesmani AC va CB qismlarga ajratadi. Agar AC kesmaning uzunligi 56 cm bo'lib, u CB kesmadan 23 cm qisqa bo'lsa, AB kesmaning uzunligini toping.",
+      "options": {
+        "A": "79 cm",
+        "B": "89 cm",
+        "C": "135 cm",
+        "D": "112 cm"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 139,
+      "lesson_id": 35,
+      "lesson_title": "Sodda geometrik shakllar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "ABC uchburchakning AB tomoni BC tomonidan 4 cm qisqa va AC tomonidan esa 3 cm uzun. Agar AC = 17 cm bo'lsa, ABC uchburchakning perimetrini hisoblang.",
+      "options": {
+        "A": "57 cm",
+        "B": "64 cm",
+        "C": "54 cm",
+        "D": "61 cm"
+      },
+      "correct": "D",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 140,
+      "lesson_id": 35,
+      "lesson_title": "Sodda geometrik shakllar",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Uchta kesmaning uzunliklari yig'indisi 143 dm. Birinchi kesma uzunligi x dm bo'lib, u ikkinchi kesmadan 23 dm qisqa, uchinchi kesmadan esa 21 dm uzun. Birinchi kesma uzunligini toping.",
+      "options": {
+        "A": "50 dm",
+        "B": "48 dm",
+        "C": "47 dm",
+        "D": "45 dm"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 141,
+      "lesson_id": 36,
+      "lesson_title": "Burchak va uning turlari",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Gradus o'lchovi 90° dan kichik bo'lgan burchak qanday burchak deyiladi?",
+      "options": {
+        "A": "O'tkir burchak",
+        "B": "To'g'ri burchak",
+        "C": "Yoyiq burchak",
+        "D": "O'tmas burchak"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 142,
+      "lesson_id": 36,
+      "lesson_title": "Burchak va uning turlari",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Burchak bissektrisasi uning tomoni bilan 37° burchak hosil qiladi. Shu burchakni toping.",
+      "options": {
+        "A": "143°",
+        "B": "37°",
+        "C": "53°",
+        "D": "74°"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 143,
+      "lesson_id": 36,
+      "lesson_title": "Burchak va uning turlari",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Teng yonli uchburchakning uchidagi burchagi 80°. Uning asosidagi burchakni toping.",
+      "options": {
+        "A": "50°",
+        "B": "100°",
+        "C": "80°",
+        "D": "40°"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 144,
+      "lesson_id": 36,
+      "lesson_title": "Burchak va uning turlari",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Uchburchakning burchaklaridan biri ikkinchisidan 2 marta katta, uchinchisidan esa 9° ga kichik. Uchburchakning eng katta burchagini toping.",
+      "options": {
+        "A": "78°",
+        "B": "87°",
+        "C": "39°",
+        "D": "63°"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 145,
+      "lesson_id": 37,
+      "lesson_title": "Aylana va doira",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Aylanani teng ikkiga bo'luvchi kesma qanday ataladi?",
+      "options": {
+        "A": "Markaz",
+        "B": "Yoy",
+        "C": "Diametr",
+        "D": "Radius"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 146,
+      "lesson_id": 37,
+      "lesson_title": "Aylana va doira",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Radiusi 5 m bo'lgan aylana uzunligini toping. (π ≈ 3,14 deb olib, C = 2πr formuladan foydalaning)",
+      "options": {
+        "A": "15,7 m",
+        "B": "31,4 m",
+        "C": "78,5 m",
+        "D": "10 m"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 147,
+      "lesson_id": 37,
+      "lesson_title": "Aylana va doira",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Diametri 2 dm bo'lgan g'ildirak 36 dm masofada necha marta aylanadi? (π ≈ 3 deb oling)",
+      "options": {
+        "A": "3 marta",
+        "B": "6 marta",
+        "C": "12 marta",
+        "D": "18 marta"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 148,
+      "lesson_id": 37,
+      "lesson_title": "Aylana va doira",
+      "topic_group_id": 10,
+      "topic_group": "Geometriya — tekislikdagi shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "G'ildirakning radiusi 30 cm ga teng. U 100 marta aylanganda qancha masofani bosib o'tadi? (π ≈ 3 deb oling)",
+      "options": {
+        "A": "3000 cm",
+        "B": "18000 cm",
+        "C": "9000 cm",
+        "D": "6000 cm"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 149,
+      "lesson_id": 38,
+      "lesson_title": "Fazoviy shakllar. Parallelepiped va kub",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Kub qirrasining uzunligi 2 m. Uning barcha qirralari uzunliklari yig'indisini(m) toping.",
+      "options": {
+        "A": "36",
+        "B": "48",
+        "C": "24",
+        "D": "32"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 150,
+      "lesson_id": 38,
+      "lesson_title": "Fazoviy shakllar. Parallelepiped va kub",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "To'g'ri burchakli parallelepipedning bo'yi 4 m, eni 3 m, balandligi 5 m. Uning hajmini(m3) toping.",
+      "options": {
+        "A": "12",
+        "B": "72",
+        "C": "68",
+        "D": "60"
+      },
+      "correct": "D",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 151,
+      "lesson_id": 38,
+      "lesson_title": "Fazoviy shakllar. Parallelepiped va kub",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "To'g'ri burchakli parallelepipedning balandligi 7 m, hajmi esa 196 m3 ga teng. Parallelepiped asosining yuzini(m2) toping.",
+      "options": {
+        "A": "28",
+        "B": "24",
+        "C": "27",
+        "D": "32"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 152,
+      "lesson_id": 38,
+      "lesson_title": "Fazoviy shakllar. Parallelepiped va kub",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Kub asosining yuzi 16 m2 ga teng. Uning to'la sirtini(m2) toping.",
+      "options": {
+        "A": "72",
+        "B": "64",
+        "C": "96",
+        "D": "80"
+      },
+      "correct": "C",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 153,
+      "lesson_id": 39,
+      "lesson_title": "Fazoviy shakllar. Amaliy masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "To'g'ri burchakli parallelepiped shaklidagi xonaning bo'yi 6 m, eni 4 m va hajmi 72 m3. Uning balandligini(m) toping.",
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "2",
+        "D": "4"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 154,
+      "lesson_id": 39,
+      "lesson_title": "Fazoviy shakllar. Amaliy masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "O'lchamlari 5 m, 3 m, 2 m bo'lgan hovuzning yarmini to'ldirish uchun qancha(tonna) suv kerak bo'ladi?",
+      "options": {
+        "A": "150",
+        "B": "15",
+        "C": "1,5",
+        "D": "1500"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 155,
+      "lesson_id": 39,
+      "lesson_title": "Fazoviy shakllar. Amaliy masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "O'lchamlari 6 m, 4 m, 2,5 m bo'lgan hovuz tayyorlash uchun qancha(m3) tuproq qazib olish kerak?",
+      "options": {
+        "A": "6000",
+        "B": "60",
+        "C": "6",
+        "D": "600"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 156,
+      "lesson_id": 39,
+      "lesson_title": "Fazoviy shakllar. Amaliy masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "To'g'ri burchakli parallelepiped shaklidagi, bo'yi 21 m, eni 13 m va chuqurligi 3 m bo'lgan o'ra qazish kerak. Buning uchun qancha(m3) hajmdagi tuproqni qazib chiqarish kerak bo'ladi?",
+      "options": {
+        "A": "910",
+        "B": "752",
+        "C": "648",
+        "D": "819"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 157,
+      "lesson_id": 40,
+      "lesson_title": "Fazoviy shakllar. Yasashga doir masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "O'yin kubi shunday yasaladiki, uning qarama-qarshi yoqlaridagi ochkolar yig'indisi 7 ga teng bo'ladi. Kubning bir yog'ida 2 ta ochko bo'lsa, unga qarama-qarshi yoqdagi ochkolar soni nechta?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "6",
+        "D": "3"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 158,
+      "lesson_id": 40,
+      "lesson_title": "Fazoviy shakllar. Yasashga doir masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Qirrasi 3 dm bo'lgan yog'och kub sirti qizil rangga bo'yaldi. So'ng u qirrasi 1 dm bo'lgan kubchalarga bo'lindi. Jami nechta kubcha hosil bo'ldi?",
+      "options": {
+        "A": "27",
+        "B": "9",
+        "C": "18",
+        "D": "36"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 159,
+      "lesson_id": 40,
+      "lesson_title": "Fazoviy shakllar. Yasashga doir masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Qirrasi 3 dm bo'lgan yog'och kub sirti qizil rangga bo'yaldi, so'ng u qirrasi 1 dm bo'lgan 27 ta kubchaga bo'lindi. Nechta kubchaning 1 ta yog'i qizil rangda bo'ladi?",
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "8",
+        "D": "1"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 160,
+      "lesson_id": 40,
+      "lesson_title": "Fazoviy shakllar. Yasashga doir masalalar",
+      "topic_group_id": 11,
+      "topic_group": "Geometriya — fazoviy shakllar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Qirrasi 3 dm bo'lgan yog'och kub sirti qizil rangga bo'yaldi, so'ng u qirrasi 1 dm bo'lgan 27 ta kubchaga bo'lindi. Hech bir yog'i bo'yalmagan kubchalar nechta?",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "0",
+        "D": "1"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 161,
+      "lesson_id": 41,
+      "lesson_title": "O'rta arifmetik",
+      "topic_group_id": 12,
+      "topic_group": "Statistika va ma'lumotlar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Ikki sonning o'rta arifmetigi 11 ga teng. 1-son 8 bo'lsa, ikkinchi sonni toping.",
+      "options": {
+        "A": "16",
+        "B": "13",
+        "C": "14",
+        "D": "12"
+      },
+      "correct": "C",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 162,
+      "lesson_id": 41,
+      "lesson_title": "O'rta arifmetik",
+      "topic_group_id": 12,
+      "topic_group": "Statistika va ma'lumotlar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Alisher baliq oviga chiqdi. U birinchi soatda 6 ta, ikkinchi soatda 11 ta va uchinchi soatda 10 ta baliq ovladi. Alisher bir soatda o'rtacha nechtadan baliq ovlagan?",
+      "options": {
+        "A": "9",
+        "B": "27",
+        "C": "10",
+        "D": "8"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 163,
+      "lesson_id": 41,
+      "lesson_title": "O'rta arifmetik",
+      "topic_group_id": 12,
+      "topic_group": "Statistika va ma'lumotlar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "Uchta sonning o'rta arifmetigi 7 ga teng. Ulardan biri 3 ga teng. Qolgan ikkita sonning o'rta arifmetigini toping.",
+      "options": {
+        "A": "10",
+        "B": "18",
+        "C": "9",
+        "D": "7"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 164,
+      "lesson_id": 41,
+      "lesson_title": "O'rta arifmetik",
+      "topic_group_id": 12,
+      "topic_group": "Statistika va ma'lumotlar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Poyezd masofani 2 soat davomida 85 km/soat tezlik bilan va 3 soat davomida 80 km/soat tezlik bilan bosib o'tdi. Poyezdning o'rtacha tezligini(km/soat) toping.",
+      "options": {
+        "A": "83",
+        "B": "80",
+        "C": "82,5",
+        "D": "82"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 165,
+      "lesson_id": 42,
+      "lesson_title": "Tengsizliklar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "x < 5 tengsizligini nechta natural son qanoatlantiradi?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 166,
+      "lesson_id": 42,
+      "lesson_title": "Tengsizliklar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "8 ≤ x < 24 tengsizligini nechta natural son qanoatlantiradi?",
+      "options": {
+        "A": "15",
+        "B": "17",
+        "C": "16",
+        "D": "14"
+      },
+      "correct": "C",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 167,
+      "lesson_id": 42,
+      "lesson_title": "Tengsizliklar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "2x + 8 > x + 23 tengsizligini yeching.",
+      "options": {
+        "A": "x < 15",
+        "B": "x > 31",
+        "C": "x > 15",
+        "D": "x > 13"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 168,
+      "lesson_id": 42,
+      "lesson_title": "Tengsizliklar",
+      "topic_group_id": 4,
+      "topic_group": "Tenglama va tengsizliklar",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "4x + 35 ≤ 100 − 9x tengsizligini nechta natural son qanoatlantiradi?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "6",
+        "D": "13"
+      },
+      "correct": "A",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 169,
+      "lesson_id": 43,
+      "lesson_title": "Bo'linish belgilari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Quyidagi sonlardan qaysi biri 10 ga bo'linadi: 32, 90, 75, 102?",
+      "options": {
+        "A": "32",
+        "B": "90",
+        "C": "102",
+        "D": "75"
+      },
+      "correct": "B",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 170,
+      "lesson_id": 43,
+      "lesson_title": "Bo'linish belgilari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "10 ga karrali ikki xonali sonlar nechta?",
+      "options": {
+        "A": "9",
+        "B": "8",
+        "C": "11",
+        "D": "10"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 171,
+      "lesson_id": 43,
+      "lesson_title": "Bo'linish belgilari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "4 ga karrali ikki xonali sonlar nechta?",
+      "options": {
+        "A": "23",
+        "B": "24",
+        "C": "22",
+        "D": "20"
+      },
+      "correct": "C",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 172,
+      "lesson_id": 43,
+      "lesson_title": "Bo'linish belgilari",
+      "topic_group_id": 2,
+      "topic_group": "Sonlar nazariyasi",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "5 ga karrali eng katta uch xonali son va 4 ga karrali eng kichik ikki xonali sonlar yig'indisini hisoblang.",
+      "options": {
+        "A": "1004",
+        "B": "1007",
+        "C": "1010",
+        "D": "1000"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 173,
+      "lesson_id": 44,
+      "lesson_title": "To'plam",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "Yil fasllari to'plami nechta elementni o'z ichiga oladi?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "12",
+        "D": "5"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 174,
+      "lesson_id": 44,
+      "lesson_title": "To'plam",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "Raqamlar to'plami nechta elementni o'z ichiga oladi?",
+      "options": {
+        "A": "12",
+        "B": "10",
+        "C": "9",
+        "D": "11"
+      },
+      "correct": "B",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 175,
+      "lesson_id": 44,
+      "lesson_title": "To'plam",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "A = {1; 2; 3; 4} va B = {3; 4; 5} to'plamlarning kesishmasi (A ∩ B) nechta elementdan iborat?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "5",
+        "D": "7"
+      },
+      "correct": "B",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 176,
+      "lesson_id": 44,
+      "lesson_title": "To'plam",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "M = {10; 20; 30; 40; 50} va N = {20; 40; 60} to'plamlarning birlashmasi (M ∪ N) nechta elementdan iborat?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "4",
+        "D": "8"
+      },
+      "correct": "B",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    },
+    {
+      "id": 177,
+      "lesson_id": 45,
+      "lesson_title": "Kombinatorika masalalari",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 1,
+      "difficulty_label": "Oson",
+      "text": "4 xil koptokdan birini necha xil usulda tanlab olish mumkin?",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "8",
+        "D": "16"
+      },
+      "correct": "A",
+      "expected_time_sec": 30,
+      "rasch_beta": null
+    },
+    {
+      "id": 178,
+      "lesson_id": 45,
+      "lesson_title": "Kombinatorika masalalari",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 2,
+      "difficulty_label": "O'rta 1",
+      "text": "4 xil ruchka va 2 xil daftar bor. Har bir o'quv qurolidan bittadan olinmoqchi. Buni necha xil usulda bajarish mumkin?",
+      "options": {
+        "A": "8",
+        "B": "4",
+        "C": "6",
+        "D": "2"
+      },
+      "correct": "A",
+      "expected_time_sec": 45,
+      "rasch_beta": null
+    },
+    {
+      "id": 179,
+      "lesson_id": 45,
+      "lesson_title": "Kombinatorika masalalari",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 3,
+      "difficulty_label": "O'rta 2",
+      "text": "4 xil ko'ylak, 3 xil shim va 2 xil tuflidan bittadan sotib olmoqchisiz. Necha xil imkoniyatingiz bor?",
+      "options": {
+        "A": "24",
+        "B": "9",
+        "C": "12",
+        "D": "18"
+      },
+      "correct": "A",
+      "expected_time_sec": 60,
+      "rasch_beta": null
+    },
+    {
+      "id": 180,
+      "lesson_id": 45,
+      "lesson_title": "Kombinatorika masalalari",
+      "topic_group_id": 13,
+      "topic_group": "To'plamlar va kombinatorika",
+      "difficulty": 4,
+      "difficulty_label": "Qiyin",
+      "text": "Uchrashuv paytida 11 kishi qo'l berib salomlashdi. Bunda necha marta qo'l berib salomlashilgan?",
+      "options": {
+        "A": "22",
+        "B": "110",
+        "C": "121",
+        "D": "55"
+      },
+      "correct": "D",
+      "expected_time_sec": 90,
+      "rasch_beta": null
+    }
+  ]
+}
