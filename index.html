@@ -28,239 +28,123 @@ body {
 .screen { display: none; }
 .screen.active { display: block; }
 
-#start-screen {
-  text-align: center;
-  padding-top: 40px;
-}
+#start-screen { text-align: center; padding-top: 40px; }
+#start-screen h1 { font-size: 24px; margin-bottom: 8px; }
+#start-screen p { color: var(--hint); margin-bottom: 24px; line-height: 1.5; }
 
-#start-screen h1 {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-
-#start-screen p {
-  color: var(--hint);
-  margin-bottom: 24px;
-  line-height: 1.5;
-}
-
-.stat-row {
-  display: flex;
-  justify-content: space-around;
-  margin: 24px 0;
-}
-
-.stat-box {
-  text-align: center;
-}
-
-.stat-num {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--btn);
-}
-
-.stat-label {
-  font-size: 12px;
-  color: var(--hint);
-  margin-top: 4px;
-}
+.stat-row { display: flex; justify-content: space-around; margin: 24px 0; }
+.stat-box { text-align: center; }
+.stat-num { font-size: 28px; font-weight: 700; color: var(--btn); }
+.stat-label { font-size: 12px; color: var(--hint); margin-top: 4px; }
 
 .btn {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  background: var(--btn);
-  color: var(--btn-text);
-  margin-top: 16px;
+  display: block; width: 100%; padding: 14px; border: none; border-radius: 12px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  background: var(--btn); color: var(--btn-text); margin-top: 16px;
 }
-
 .btn:active { opacity: 0.8; }
+.btn.secondary { background: var(--secondary-bg); color: var(--text); }
 
-#progress-bar {
-  height: 4px;
-  background: var(--secondary-bg);
-  border-radius: 2px;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
+#progress-bar { height: 4px; background: var(--secondary-bg); border-radius: 2px; margin-bottom: 12px; overflow: hidden; }
+#progress-fill { height: 100%; background: var(--btn); transition: width 0.3s; width: 0%; }
 
-#progress-fill {
-  height: 100%;
-  background: var(--btn);
-  transition: width 0.3s;
-  width: 0%;
+#topic-header {
+  background: var(--secondary-bg); border-radius: 10px; padding: 10px 14px;
+  margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center;
 }
+#topic-name { font-size: 13px; font-weight: 600; flex: 1; }
+#topic-counter { font-size: 12px; color: var(--hint); white-space: nowrap; margin-left: 8px; }
 
-#question-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-#q-number {
-  font-size: 14px;
-  color: var(--hint);
-}
-
-#q-timer {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--hint);
-}
+#question-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+#q-number { font-size: 14px; color: var(--hint); }
+#q-timer { font-size: 14px; font-weight: 600; color: var(--hint); }
 
 #q-difficulty {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 11px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; font-weight: 600; margin-bottom: 12px;
 }
-
 .diff-1 { background: #e8f5e9; color: #2e7d32; }
 .diff-2 { background: #fff3e0; color: #ef6c00; }
 .diff-3 { background: #fff3e0; color: #e65100; }
 .diff-4 { background: #ffebee; color: #c62828; }
 
-#q-text {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
+#q-text { font-size: 18px; line-height: 1.6; margin-bottom: 20px; font-weight: 500; }
 
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
+.options { display: flex; flex-direction: column; gap: 10px; }
 .option-btn {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 14px 16px;
-  border: 2px solid var(--secondary-bg);
-  border-radius: 12px;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.15s;
-  text-align: left;
+  display: flex; align-items: center; width: 100%; padding: 14px 16px;
+  border: 2px solid var(--secondary-bg); border-radius: 12px;
+  background: var(--bg); color: var(--text); font-size: 16px;
+  cursor: pointer; transition: all 0.15s; text-align: left;
 }
-
 .option-btn:active { transform: scale(0.98); }
-
 .option-letter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--secondary-bg);
-  font-weight: 700;
-  font-size: 14px;
-  margin-right: 12px;
-  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--secondary-bg); font-weight: 700; font-size: 14px;
+  margin-right: 12px; flex-shrink: 0;
 }
+.option-btn.selected { border-color: var(--btn); background: color-mix(in srgb, var(--btn) 10%, var(--bg)); }
+.option-btn.selected .option-letter { background: var(--btn); color: var(--btn-text); }
+.option-btn.correct-answer { border-color: #4caf50; background: #e8f5e9; }
+.option-btn.wrong-answer { border-color: #f44336; background: #ffebee; }
 
-.option-btn.selected {
-  border-color: var(--btn);
-  background: color-mix(in srgb, var(--btn) 10%, var(--bg));
-}
+#pause-screen { text-align: center; padding-top: 80px; }
+#pause-screen h2 { margin-bottom: 12px; }
+#pause-screen p { color: var(--hint); margin-bottom: 24px; line-height: 1.5; }
+#pause-timer { font-size: 48px; font-weight: 700; color: var(--btn); margin: 24px 0; }
 
-.option-btn.selected .option-letter {
-  background: var(--btn);
-  color: var(--btn-text);
-}
+#result-screen { text-align: center; padding-top: 20px; }
+.result-score { font-size: 48px; font-weight: 700; color: var(--btn); }
+.result-label { color: var(--hint); margin-bottom: 24px; }
 
-.option-btn.correct-answer {
-  border-color: #4caf50;
-  background: #e8f5e9;
-}
-
-.option-btn.wrong-answer {
-  border-color: #f44336;
-  background: #ffebee;
-}
-
-#result-screen {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.result-score {
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--btn);
-}
-
-.result-label {
-  color: var(--hint);
-  margin-bottom: 24px;
-}
-
-.topic-list {
-  text-align: left;
-  margin: 16px 0;
-}
-
-.topic-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--secondary-bg);
-}
-
-.topic-status {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-
+.topic-list { text-align: left; margin: 16px 0; }
+.topic-item { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--secondary-bg); }
+.topic-status { width: 12px; height: 12px; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
 .topic-status.qizil { background: #f44336; }
 .topic-status.sariq { background: #ff9800; }
 .topic-status.yashil { background: #4caf50; }
-
 .topic-name { flex: 1; font-size: 14px; }
 .topic-pct { font-size: 14px; font-weight: 600; color: var(--hint); }
+
+.legend { display: flex; gap: 16px; justify-content: center; margin: 12px 0 8px; }
+.legend-item { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--hint); }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 </style>
 </head>
 <body>
 
 <div id="start-screen" class="screen active">
   <h1>📐 Matematika Test</h1>
-  <p>Prezident Maktabi imtihoniga tayyorgarlik<br>45 mavzu · 180 savol · 4 daraja</p>
+  <p>Prezident Maktabi imtihoniga tayyorgarlik<br>45 mavzu · Adaptiv · Rasch model</p>
   <div class="stat-row">
-    <div class="stat-box">
-      <div class="stat-num" id="total-questions">180</div>
-      <div class="stat-label">savol</div>
-    </div>
     <div class="stat-box">
       <div class="stat-num">45</div>
       <div class="stat-label">mavzu</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">🎯</div>
+      <div class="stat-label">adaptiv</div>
     </div>
     <div class="stat-box">
       <div class="stat-num">⏱</div>
       <div class="stat-label">vaqt o'lchanadi</div>
     </div>
   </div>
+  <p style="font-size:13px; color:var(--hint);">
+    Test sizning darajangizga moslashadi.<br>
+    Bilgan mavzulardan tezroq o'tadi,<br>
+    qiyin mavzularda chuqurroq tekshiradi.
+  </p>
   <button class="btn" onclick="startTest()">Testni boshlash</button>
 </div>
 
 <div id="test-screen" class="screen">
   <div id="progress-bar"><div id="progress-fill"></div></div>
+  <div id="topic-header">
+    <span id="topic-name"></span>
+    <span id="topic-counter"></span>
+  </div>
   <div id="question-header">
     <span id="q-number"></span>
     <span id="q-timer">0:00</span>
@@ -270,20 +154,35 @@ body {
   <div class="options" id="options-container"></div>
 </div>
 
+<div id="pause-screen" class="screen">
+  <h2>😤 Dam ol!</h2>
+  <p>Bir oz tinchlan va diqqatingni jamla.<br>Shoshilmasdan javob ber.</p>
+  <div id="pause-timer">2:00</div>
+  <button class="btn secondary" id="pause-skip" style="display:none" onclick="resumeTest()">Davom etish</button>
+</div>
+
 <div id="result-screen" class="screen">
   <div class="result-score" id="result-score"></div>
   <div class="result-label">to'g'ri javob</div>
   <div class="stat-row">
     <div class="stat-box">
+      <div class="stat-num" id="r-total-q">0</div>
+      <div class="stat-label">jami savol</div>
+    </div>
+    <div class="stat-box">
       <div class="stat-num" id="r-time">0</div>
-      <div class="stat-label">o'rtacha vaqt (sek)</div>
+      <div class="stat-label">o'rtacha vaqt</div>
     </div>
     <div class="stat-box">
       <div class="stat-num" id="r-percent">0%</div>
       <div class="stat-label">foiz</div>
     </div>
   </div>
-  <h3 style="text-align:left; margin: 16px 0 8px;">Mavzular profili</h3>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#4caf50"></div> Biladi</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#ff9800"></div> Mashq kerak</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f44336"></div> Bilmaydi</div>
+  </div>
   <div class="topic-list" id="topic-list"></div>
   <button class="btn" onclick="sendResults()">Natijani yuborish</button>
 </div>
@@ -293,20 +192,197 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-let questions = [];
-let currentIndex = 0;
-let responses = [];
+let bank = {};
+let lessons = [];
+let lessonMeta = {};
+
+let engine = null;
 let questionStartTime = 0;
 let timerInterval = null;
+let totalQuestionsAsked = 0;
 
 async function loadQuestions() {
   const resp = await fetch('./questions.json');
   const data = await resp.json();
-  questions = data.questions;
-  document.getElementById('total-questions').textContent = questions.length;
+
+  const lessonSet = new Set();
+  for (const q of data.questions) {
+    const key = `${q.lesson_id}_${q.difficulty}`;
+    bank[key] = q;
+    lessonSet.add(q.lesson_id);
+    if (!lessonMeta[q.lesson_id]) {
+      lessonMeta[q.lesson_id] = { title: q.lesson_title, topicGroup: q.topic_group, topicGroupId: q.topic_group_id };
+    }
+  }
+  lessons = [...lessonSet].sort((a, b) => a - b);
 }
 
 loadQuestions();
+
+class AdaptiveEngine {
+  constructor() {
+    this.lessonIndex = 0;
+    this.globalLevel = 4;
+    this.topicResults = [];
+    this.responses = [];
+    this.topicState = null;
+    this.consecutiveFastWrong = 0;
+    this.usedKeys = new Set();
+  }
+
+  startTopic() {
+    const lessonId = lessons[this.lessonIndex];
+    const startDiff = this.globalLevel;
+    this.topicState = { lessonId, step: 0, startDiff, questionsAsked: [] };
+    return this.getQuestion(startDiff);
+  }
+
+  getQuestion(difficulty) {
+    const lid = this.topicState.lessonId;
+    const key = `${lid}_${difficulty}`;
+    let q = bank[key];
+    if (!q || this.usedKeys.has(key)) {
+      for (const d of [difficulty, difficulty - 1, difficulty + 1, 1, 2, 3, 4]) {
+        if (d < 1 || d > 4) continue;
+        const k = `${lid}_${d}`;
+        if (bank[k] && !this.usedKeys.has(k)) { q = bank[k]; break; }
+      }
+    }
+    if (q) this.usedKeys.add(`${lid}_${q.difficulty}`);
+    return q;
+  }
+
+  processAnswer(question, answer, timeSec) {
+    const isCorrect = answer === question.correct;
+    const isFast = timeSec < Math.max(5, (question.expected_time_sec || 30) * 0.25);
+
+    const response = {
+      question_id: question.id,
+      lesson_id: question.lesson_id,
+      topic_group_id: question.topic_group_id,
+      topic_group: question.topic_group,
+      difficulty: question.difficulty,
+      answer,
+      correct: isCorrect,
+      time_sec: timeSec,
+      expected_time: question.expected_time_sec,
+    };
+    this.responses.push(response);
+    this.topicState.questionsAsked.push(response);
+    this.topicState.step++;
+    totalQuestionsAsked++;
+
+    if (isFast && !isCorrect) {
+      this.consecutiveFastWrong++;
+    } else {
+      this.consecutiveFastWrong = 0;
+    }
+
+    if (this.consecutiveFastWrong >= 3) {
+      return { action: 'pause' };
+    }
+
+    return this.decideNext(isCorrect, question.difficulty);
+  }
+
+  decideNext(isCorrect, askedDifficulty) {
+    const st = this.topicState;
+
+    if (st.startDiff === 4) {
+      if (st.step === 1) {
+        if (isCorrect) return this.finishTopic('yashil');
+        return { action: 'question', question: this.getQuestion(2) };
+      }
+      if (st.step === 2) {
+        if (isCorrect) return { action: 'question', question: this.getQuestion(3) };
+        return { action: 'question', question: this.getQuestion(1) };
+      }
+      if (st.step === 3) {
+        if (isCorrect) return this.finishTopic('sariq');
+        if (askedDifficulty === 1) return this.finishTopic('qizil');
+        return this.finishTopic('sariq');
+      }
+    }
+
+    if (st.startDiff === 2 || st.startDiff === 3) {
+      if (st.step === 1) {
+        if (isCorrect) return { action: 'question', question: this.getQuestion(4) };
+        return { action: 'question', question: this.getQuestion(1) };
+      }
+      if (st.step === 2) {
+        if (isCorrect && askedDifficulty === 4) return this.finishTopic('yashil');
+        if (isCorrect) return this.finishTopic('sariq');
+        if (askedDifficulty === 4) return this.finishTopic('sariq');
+        return this.finishTopic('qizil');
+      }
+    }
+
+    if (st.startDiff === 1) {
+      if (st.step === 1) {
+        if (isCorrect) return { action: 'question', question: this.getQuestion(2) };
+        return this.finishTopic('qizil');
+      }
+      if (st.step === 2) {
+        if (isCorrect) return this.finishTopic('sariq');
+        return this.finishTopic('qizil');
+      }
+    }
+
+    return this.finishTopic('sariq');
+  }
+
+  finishTopic(status) {
+    const st = this.topicState;
+    this.topicResults.push({
+      lessonId: st.lessonId,
+      title: lessonMeta[st.lessonId]?.title || '?',
+      topicGroup: lessonMeta[st.lessonId]?.topicGroup || '?',
+      topicGroupId: lessonMeta[st.lessonId]?.topicGroupId || 0,
+      status,
+      questions: st.questionsAsked,
+    });
+
+    this.updateGlobalLevel();
+    this.lessonIndex++;
+
+    if (this.lessonIndex >= lessons.length) {
+      return { action: 'finish' };
+    }
+    return { action: 'next_topic' };
+  }
+
+  updateGlobalLevel() {
+    const recent = this.topicResults.slice(-5);
+    if (recent.length < 3) return;
+
+    const greens = recent.filter(r => r.status === 'yashil').length;
+    if (greens >= 4) this.globalLevel = 4;
+    else if (greens >= 2) this.globalLevel = Math.min(4, Math.max(2, this.globalLevel));
+    else this.globalLevel = 2;
+  }
+
+  getProgress() {
+    return { current: this.lessonIndex, total: lessons.length };
+  }
+
+  getSummary() {
+    const correct = this.responses.filter(r => r.correct).length;
+    const total = this.responses.length;
+    const avgTime = total > 0
+      ? (this.responses.reduce((s, r) => s + r.time_sec, 0) / total).toFixed(1)
+      : 0;
+
+    return {
+      correct,
+      total,
+      percent: total > 0 ? Math.round((correct / total) * 100) : 0,
+      avgTime,
+      topicResults: this.topicResults,
+      responses: this.responses,
+      globalLevel: this.globalLevel,
+    };
+  }
+}
 
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -314,36 +390,41 @@ function showScreen(id) {
 }
 
 function startTest() {
-  currentIndex = 0;
-  responses = [];
+  engine = new AdaptiveEngine();
+  totalQuestionsAsked = 0;
   showScreen('test-screen');
-  showQuestion();
+  startNextTopic();
 }
 
-function showQuestion() {
-  if (currentIndex >= questions.length) {
-    finishTest();
-    return;
-  }
+function startNextTopic() {
+  const q = engine.startTopic();
+  if (!q) { finishTest(); return; }
 
-  const q = questions[currentIndex];
-  const diffLabels = {1: 'Oson', 2: "O'rta 1", 3: "O'rta 2", 4: 'Qiyin'};
+  const prog = engine.getProgress();
+  document.getElementById('progress-fill').style.width = `${(prog.current / prog.total) * 100}%`;
+  document.getElementById('topic-name').textContent = lessonMeta[lessons[engine.lessonIndex]]?.title || '';
+  document.getElementById('topic-counter').textContent = `${prog.current + 1} / ${prog.total}`;
 
-  document.getElementById('q-number').textContent =
-    `${currentIndex + 1} / ${questions.length}`;
-  document.getElementById('progress-fill').style.width =
-    `${((currentIndex) / questions.length) * 100}%`;
+  showQuestion(q);
+}
+
+let currentQuestion = null;
+
+function showQuestion(q) {
+  if (!q) { finishTest(); return; }
+  currentQuestion = q;
+
+  const diffLabels = {1: 'Oson', 2: "O'rta", 3: "O'rta+", 4: 'Qiyin'};
+  document.getElementById('q-number').textContent = `Savol #${totalQuestionsAsked + 1}`;
 
   const diffEl = document.getElementById('q-difficulty');
   diffEl.textContent = diffLabels[q.difficulty] || '?';
   diffEl.className = `diff-${q.difficulty}`;
-
   document.getElementById('q-text').textContent = q.text;
 
   const container = document.getElementById('options-container');
   container.innerHTML = '';
-  const letters = ['A', 'B', 'C', 'D'];
-  for (const letter of letters) {
+  for (const letter of ['A', 'B', 'C', 'D']) {
     if (!q.options[letter]) continue;
     const btn = document.createElement('button');
     btn.className = 'option-btn';
@@ -371,7 +452,7 @@ function selectAnswer(letter) {
   clearInterval(timerInterval);
   const timeMs = performance.now() - questionStartTime;
   const timeSec = Math.round(timeMs / 100) / 10;
-  const q = questions[currentIndex];
+  const q = currentQuestion;
 
   const isCorrect = letter === q.correct;
 
@@ -384,70 +465,94 @@ function selectAnswer(letter) {
     if (btnLetter === letter) btn.classList.add('selected');
   });
 
-  responses.push({
-    question_id: q.id,
-    lesson_id: q.lesson_id,
-    topic_group_id: q.topic_group_id,
-    topic_group: q.topic_group,
-    answer: letter,
-    correct: isCorrect,
-    time_sec: timeSec,
-    expected_time: q.expected_time_sec,
-    difficulty: q.difficulty,
-  });
+  const result = engine.processAnswer(q, letter, timeSec);
 
   setTimeout(() => {
-    currentIndex++;
-    showQuestion();
+    if (result.action === 'pause') {
+      showPause();
+    } else if (result.action === 'question') {
+      const prog = engine.getProgress();
+      document.getElementById('topic-counter').textContent = `${prog.current + 1} / ${prog.total}`;
+      showQuestion(result.question);
+    } else if (result.action === 'next_topic') {
+      startNextTopic();
+    } else if (result.action === 'finish') {
+      finishTest();
+    }
   }, 800);
 }
 
+function showPause() {
+  showScreen('pause-screen');
+  engine.consecutiveFastWrong = 0;
+  let remaining = 120;
+  const timerEl = document.getElementById('pause-timer');
+  const skipBtn = document.getElementById('pause-skip');
+  skipBtn.style.display = 'none';
+
+  const interval = setInterval(() => {
+    remaining--;
+    const m = Math.floor(remaining / 60);
+    const s = remaining % 60;
+    timerEl.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+    if (remaining <= 60) skipBtn.style.display = 'block';
+    if (remaining <= 0) {
+      clearInterval(interval);
+      resumeTest();
+    }
+  }, 1000);
+  window._pauseInterval = interval;
+}
+
+function resumeTest() {
+  clearInterval(window._pauseInterval);
+  showScreen('test-screen');
+  const st = engine.topicState;
+  if (st) {
+    const nextResult = engine.decideNext(false, 0);
+    if (nextResult.action === 'question') showQuestion(nextResult.question);
+    else if (nextResult.action === 'next_topic') startNextTopic();
+    else finishTest();
+  } else {
+    startNextTopic();
+  }
+}
+
 function finishTest() {
+  clearInterval(timerInterval);
   showScreen('result-screen');
 
-  const correct = responses.filter(r => r.correct).length;
-  const total = responses.length;
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const avgTime = total > 0
-    ? (responses.reduce((s, r) => s + r.time_sec, 0) / total).toFixed(1)
-    : 0;
+  const summary = engine.getSummary();
 
-  document.getElementById('result-score').textContent = `${correct}/${total}`;
-  document.getElementById('r-time').textContent = avgTime;
-  document.getElementById('r-percent').textContent = `${pct}%`;
-
-  const byTopic = {};
-  for (const r of responses) {
-    if (!byTopic[r.topic_group_id]) {
-      byTopic[r.topic_group_id] = { name: r.topic_group, correct: 0, total: 0, time: 0 };
-    }
-    byTopic[r.topic_group_id].total++;
-    byTopic[r.topic_group_id].time += r.time_sec;
-    if (r.correct) byTopic[r.topic_group_id].correct++;
-  }
+  document.getElementById('result-score').textContent = `${summary.correct}/${summary.total}`;
+  document.getElementById('r-total-q').textContent = summary.total;
+  document.getElementById('r-time').textContent = `${summary.avgTime}s`;
+  document.getElementById('r-percent').textContent = `${summary.percent}%`;
 
   const listEl = document.getElementById('topic-list');
   listEl.innerHTML = '';
-  for (const [tid, t] of Object.entries(byTopic).sort((a, b) => a[0] - b[0])) {
-    const p = Math.round((t.correct / t.total) * 100);
-    const avgT = t.time / t.total;
-    let status = 'qizil';
-    if (p >= 75 && avgT <= 60) status = 'yashil';
-    else if (p >= 50) status = 'sariq';
-
+  for (const t of summary.topicResults) {
     const item = document.createElement('div');
     item.className = 'topic-item';
     item.innerHTML = `
-      <div class="topic-status ${status}"></div>
-      <div class="topic-name">${t.name}</div>
-      <div class="topic-pct">${p}%</div>
+      <div class="topic-status ${t.status}"></div>
+      <div class="topic-name">${t.title}</div>
+      <div class="topic-pct">${t.status === 'yashil' ? '🟢' : t.status === 'sariq' ? '🟡' : '🔴'}</div>
     `;
     listEl.appendChild(item);
   }
 }
 
 function sendResults() {
-  tg.sendData(JSON.stringify({ responses }));
+  const summary = engine.getSummary();
+  tg.sendData(JSON.stringify({
+    responses: summary.responses,
+    topicResults: summary.topicResults,
+    correct: summary.correct,
+    total: summary.total,
+    percent: summary.percent,
+    avgTime: summary.avgTime,
+  }));
 }
 </script>
 </body>
