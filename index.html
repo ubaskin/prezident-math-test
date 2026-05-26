@@ -476,6 +476,25 @@ body {
   </div>
 </div>
 
+<!-- ===== MILESTONE SCREEN ===== -->
+<div id="milestone-screen" class="screen">
+  <div class="result-header" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+    <div style="font-size:48px;margin-bottom:12px" id="ms-icon">📊</div>
+    <div class="rh-title" id="ms-title">Oraliq natija</div>
+    <div class="rh-subtitle" id="ms-subtitle"></div>
+  </div>
+  <div class="result-body">
+    <div class="result-stats">
+      <div class="rs-card"><div class="rsc-num" id="ms-green" style="color:#10b981">0</div><div class="rsc-label">biladi</div></div>
+      <div class="rs-card"><div class="rsc-num" id="ms-yellow" style="color:#f59e0b">0</div><div class="rsc-label">mashq kerak</div></div>
+      <div class="rs-card"><div class="rsc-num" id="ms-red" style="color:#ef4444">0</div><div class="rsc-label">bilmaydi</div></div>
+    </div>
+    <div id="ms-weak" style="padding:12px 16px;font-size:14px;color:var(--hint)"></div>
+    <div id="ms-advice" style="padding:8px 16px;background:var(--secondary-bg);border-radius:12px;margin:8px 16px;font-size:14px"></div>
+    <button class="btn primary" onclick="continueFromMilestone()" style="margin:16px">Davom etish →</button>
+  </div>
+</div>
+
 <!-- ===== RESULT SCREEN ===== -->
 <div id="result-screen" class="screen">
   <div class="result-header">
@@ -770,6 +789,12 @@ function resumeFromSaved(state) {
   engine.isPaid = state.isPaid;
   engine.consecutiveFastWrong = state.consecutiveFastWrong;
   totalQuestionsAsked = state.totalQuestionsAsked;
+
+  if (!engine.isPaid && engine.lessonIndex >= 5) {
+    showPaywall();
+    return;
+  }
+
   showScreen('test-screen');
   startNextTopic();
 }
@@ -803,7 +828,16 @@ async function startTest() {
   startNextTopic();
 }
 
+const shownMilestones = new Set();
+
 function startNextTopic() {
+  const idx = engine.lessonIndex;
+  if (engine.isPaid && (idx === 15 || idx === 30) && !shownMilestones.has(idx)) {
+    shownMilestones.add(idx);
+    showMilestone(idx);
+    return;
+  }
+
   const q = engine.startTopic();
   if (!q) { finishTest(); return; }
 
@@ -813,6 +847,43 @@ function startNextTopic() {
   document.getElementById('topic-counter').textContent = `${prog.current + 1} / ${prog.total}`;
 
   showQuestion(q);
+}
+
+function showMilestone(topicIdx) {
+  const topics = engine.topicResults;
+  const greens = topics.filter(t => t.status === 'yashil').length;
+  const yellows = topics.filter(t => t.status === 'sariq').length;
+  const reds = topics.filter(t => t.status === 'qizil').length;
+  const correct = engine.responses.filter(r => r.correct).length;
+  const total = engine.responses.length;
+  const pct = total > 0 ? Math.round(correct / total * 100) : 0;
+
+  document.getElementById('ms-title').textContent = `${topicIdx} mavzu o'tildi`;
+  document.getElementById('ms-subtitle').textContent = `${correct}/${total} to'g'ri (${pct}%)`;
+  document.getElementById('ms-green').textContent = greens;
+  document.getElementById('ms-yellow').textContent = yellows;
+  document.getElementById('ms-red').textContent = reds;
+
+  const weakTopics = topics.filter(t => t.status === 'qizil').map(t => t.title);
+  document.getElementById('ms-weak').innerHTML = weakTopics.length > 0
+    ? `<b>Zaif mavzular:</b> ${weakTopics.join(', ')}`
+    : '✅ Hozircha qizil mavzu yo\'q — zo\'r!';
+
+  const remaining = 45 - topicIdx;
+  let advice = '';
+  if (pct >= 70) advice = `💪 Yaxshi ketayapsiz! Qolgan ${remaining} mavzuda shu sur'atni saqlang.`;
+  else if (pct >= 50) advice = `📚 O'rtacha natija. Qolgan ${remaining} mavzuda diqqatli bo'ling — zaif mavzularga e'tibor bering.`;
+  else advice = `⚠️ Zaif tomonlar ko'p. Qolgan ${remaining} mavzuda tezlikni emas, to'g'rilikni tanlang.`;
+  document.getElementById('ms-advice').textContent = advice;
+
+  document.getElementById('ms-icon').textContent = topicIdx === 15 ? '📊' : '📈';
+  showScreen('milestone-screen');
+  saveProgress();
+}
+
+function continueFromMilestone() {
+  showScreen('test-screen');
+  startNextTopic();
 }
 
 let currentQuestion = null;
