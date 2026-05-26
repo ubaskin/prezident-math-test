@@ -508,7 +508,7 @@ body {
       <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Bilmaydi</div>
     </div>
     <div class="topic-list" id="topic-list"></div>
-    <button class="btn primary" onclick="sendResults()">📤 Natijani yuborish</button>
+    <p style="text-align:center;color:var(--hint);font-size:13px;margin-top:12px">📤 Natija avtomatik yuborilmoqda...</p>
   </div>
 </div>
 
@@ -533,6 +533,8 @@ let questionStartTime = 0;
 let timerInterval = null;
 let totalQuestionsAsked = 0;
 
+let questionsReady = false;
+
 async function loadQuestions() {
   const resp = await fetch('./questions.json');
   const data = await resp.json();
@@ -547,6 +549,7 @@ async function loadQuestions() {
     }
   }
   lessons = [...lessonSet].sort((a, b) => a - b);
+  questionsReady = true;
 }
 
 loadQuestions();
@@ -782,6 +785,7 @@ function showScreen(id) {
 }
 
 async function startTest() {
+  if (!questionsReady) await loadQuestions();
   const saved = await loadSavedProgress();
   const params = new URLSearchParams(window.location.search);
   const isPaid = params.get('paid') === '1';
@@ -913,15 +917,7 @@ function showPause() {
 function resumeTest() {
   clearInterval(window._pauseInterval);
   showScreen('test-screen');
-  const st = engine.topicState;
-  if (st) {
-    const nextResult = engine.decideNext(false, 0);
-    if (nextResult.action === 'question') showQuestion(nextResult.question);
-    else if (nextResult.action === 'next_topic') startNextTopic();
-    else finishTest();
-  } else {
-    startNextTopic();
-  }
+  startNextTopic();
 }
 
 function showPaywall() {
