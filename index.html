@@ -15,6 +15,10 @@
   --btn: var(--tg-theme-button-color, #3390ec);
   --btn-text: var(--tg-theme-button-text-color, #fff);
   --secondary-bg: var(--tg-theme-secondary-bg-color, #f0f0f0);
+  --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
 }
 
 body {
@@ -22,28 +26,134 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  padding: 16px;
+  overflow-x: hidden;
 }
 
 .screen { display: none; }
-.screen.active { display: block; }
+.screen.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-#start-screen { text-align: center; padding-top: 40px; }
-#start-screen h1 { font-size: 24px; margin-bottom: 8px; }
-#start-screen p { color: var(--hint); margin-bottom: 24px; line-height: 1.5; }
+/* ===== START SCREEN ===== */
+#start-screen { padding: 0; }
 
-.stat-row { display: flex; justify-content: space-around; margin: 24px 0; }
-.stat-box { text-align: center; }
-.stat-num { font-size: 28px; font-weight: 700; color: var(--btn); }
-.stat-label { font-size: 12px; color: var(--hint); margin-top: 4px; }
+.hero-banner {
+  background: var(--accent-gradient);
+  padding: 40px 24px 32px;
+  text-align: center;
+  border-radius: 0 0 28px 28px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -60%; left: -20%;
+  width: 140%; height: 140%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+}
+.hero-icon {
+  width: 72px; height: 72px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(10px);
+}
+.hero-banner h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+.hero-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+
+.start-body { padding: 20px 16px 24px; }
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.feature-card {
+  background: var(--secondary-bg);
+  border-radius: 14px;
+  padding: 16px 10px;
+  text-align: center;
+}
+.feature-card .fc-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.feature-card .fc-num {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+.feature-card .fc-label {
+  font-size: 11px;
+  color: var(--hint);
+  margin-top: 2px;
+}
+
+.info-card {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.info-card .ic-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.info-card .ic-text {
+  font-size: 13px;
+  color: var(--hint);
+  line-height: 1.6;
+}
+
+.trial-badge {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.trial-badge .tb-icon { font-size: 28px; flex-shrink: 0; }
+.trial-badge .tb-content { flex: 1; }
+.trial-badge .tb-title { font-size: 13px; font-weight: 600; color: #92400e; }
+.trial-badge .tb-desc { font-size: 12px; color: #a16207; line-height: 1.5; margin-top: 2px; }
 
 .btn {
-  display: block; width: 100%; padding: 14px; border: none; border-radius: 12px;
+  display: block; width: 100%; padding: 15px; border: none; border-radius: 14px;
   font-size: 16px; font-weight: 600; cursor: pointer;
-  background: var(--btn); color: var(--btn-text); margin-top: 16px;
+  transition: transform 0.1s, opacity 0.15s;
 }
-.btn:active { opacity: 0.8; }
-.btn.secondary { background: var(--secondary-bg); color: var(--text); }
+.btn:active { transform: scale(0.98); opacity: 0.85; }
+.btn.primary {
+  background: var(--accent-gradient);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.35);
+}
+.btn.secondary { background: var(--secondary-bg); color: var(--text); margin-top: 10px; }
+.btn.telegram { background: var(--btn); color: var(--btn-text); }
+
+/* ===== TEST SCREEN ===== */
+#test-screen { padding: 16px; }
 
 #progress-bar { height: 4px; background: var(--secondary-bg); border-radius: 2px; margin-bottom: 12px; overflow: hidden; }
 #progress-fill { height: 100%; background: var(--btn); transition: width 0.3s; width: 0%; }
@@ -86,66 +196,233 @@ body {
 }
 .option-btn.selected { border-color: var(--btn); background: color-mix(in srgb, var(--btn) 10%, var(--bg)); }
 .option-btn.selected .option-letter { background: var(--btn); color: var(--btn-text); }
-.option-btn.correct-answer { border-color: #4caf50; background: #e8f5e9; }
-.option-btn.wrong-answer { border-color: #f44336; background: #ffebee; }
+.option-btn.correct-answer { border-color: var(--success); background: #ecfdf5; }
+.option-btn.wrong-answer { border-color: var(--danger); background: #fef2f2; }
 
-#pause-screen { text-align: center; padding-top: 80px; }
-#pause-screen h2 { margin-bottom: 12px; }
-#pause-screen p { color: var(--hint); margin-bottom: 24px; line-height: 1.5; }
-#pause-timer { font-size: 48px; font-weight: 700; color: var(--btn); margin: 24px 0; }
+/* ===== PAUSE SCREEN ===== */
+#pause-screen { padding: 16px; text-align: center; }
+.pause-content { padding-top: 60px; }
+.pause-icon {
+  width: 80px; height: 80px;
+  background: var(--secondary-bg);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#pause-screen h2 { font-size: 22px; margin-bottom: 8px; }
+#pause-screen .pause-desc { color: var(--hint); margin-bottom: 32px; line-height: 1.6; font-size: 14px; }
+#pause-timer {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--btn);
+  margin: 24px 0;
+  font-variant-numeric: tabular-nums;
+}
 
-#result-screen { text-align: center; padding-top: 20px; }
-.result-score { font-size: 48px; font-weight: 700; color: var(--btn); }
-.result-label { color: var(--hint); margin-bottom: 24px; }
+/* ===== PAYWALL SCREEN ===== */
+#paywall-screen { padding: 0; }
 
-.topic-list { text-align: left; margin: 16px 0; }
-.topic-item { display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--secondary-bg); }
-.topic-status { width: 12px; height: 12px; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
-.topic-status.qizil { background: #f44336; }
-.topic-status.sariq { background: #ff9800; }
-.topic-status.yashil { background: #4caf50; }
-.topic-name { flex: 1; font-size: 14px; }
-.topic-pct { font-size: 14px; font-weight: 600; color: var(--hint); }
+.paywall-header {
+  background: var(--accent-gradient);
+  padding: 32px 24px 28px;
+  text-align: center;
+  border-radius: 0 0 28px 28px;
+}
+.paywall-header .pw-icon { font-size: 48px; margin-bottom: 12px; }
+.paywall-header h2 { font-size: 20px; color: #fff; margin-bottom: 6px; }
+.paywall-header p { font-size: 14px; color: rgba(255,255,255,0.8); }
 
-.legend { display: flex; gap: 16px; justify-content: center; margin: 12px 0 8px; }
-.legend-item { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--hint); }
-.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.paywall-body { padding: 20px 16px; }
+
+.trial-summary {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.trial-chip {
+  background: var(--secondary-bg);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ai-insight {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+}
+.ai-insight .ai-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hint);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.upgrade-card {
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.upgrade-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #5b21b6;
+  margin-bottom: 6px;
+}
+.upgrade-card p {
+  font-size: 13px;
+  color: #6d28d9;
+  line-height: 1.5;
+}
+
+/* ===== RESULT SCREEN ===== */
+#result-screen { padding: 0; }
+
+.result-header {
+  background: var(--accent-gradient);
+  padding: 32px 24px;
+  text-align: center;
+  border-radius: 0 0 28px 28px;
+  color: #fff;
+}
+.result-score-ring {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.result-score-ring .rs-num {
+  font-size: 28px;
+  font-weight: 700;
+}
+.result-score-ring .rs-label {
+  font-size: 11px;
+  opacity: 0.8;
+}
+.result-header .rh-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.result-header .rh-subtitle {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.result-body { padding: 20px 16px; }
+
+.result-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.rs-card {
+  background: var(--secondary-bg);
+  border-radius: 14px;
+  padding: 14px 8px;
+  text-align: center;
+}
+.rs-card .rsc-num { font-size: 22px; font-weight: 700; color: var(--text); }
+.rs-card .rsc-label { font-size: 11px; color: var(--hint); margin-top: 2px; }
+
+.legend {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 0 0 12px;
+  padding: 10px;
+  background: var(--secondary-bg);
+  border-radius: 12px;
+}
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--hint); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.topic-list { margin: 0 0 20px; }
+.topic-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--secondary-bg);
+}
+.topic-item:last-child { border-bottom: none; }
+.topic-status { width: 10px; height: 10px; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
+.topic-status.qizil { background: var(--danger); }
+.topic-status.sariq { background: var(--warning); }
+.topic-status.yashil { background: var(--success); }
+.topic-name { flex: 1; font-size: 14px; line-height: 1.3; }
+.topic-pct { font-size: 14px; font-weight: 600; margin-left: 8px; }
 </style>
 </head>
 <body>
 
+<!-- ===== START SCREEN ===== -->
 <div id="start-screen" class="screen active">
-  <h1>📐 Matematika Test</h1>
-  <p>Prezident Maktabi imtihoniga tayyorgarlik<br>45 mavzu · Adaptiv · Rasch model</p>
-  <div class="stat-row">
-    <div class="stat-box">
-      <div class="stat-num">45</div>
-      <div class="stat-label">mavzu</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">🎯</div>
-      <div class="stat-label">adaptiv</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num">⏱</div>
-      <div class="stat-label">vaqt o'lchanadi</div>
-    </div>
+  <div class="hero-banner">
+    <div class="hero-icon">📐</div>
+    <h1>Prezident Maktabi</h1>
+    <div class="hero-subtitle">Matematika imtihoniga tayyorgarlik<br>Adaptiv test · Rasch model</div>
   </div>
-  <p style="font-size:13px; color:var(--hint);">
-    Test sizning darajangizga moslashadi.<br>
-    Bilgan mavzulardan tezroq o'tadi,<br>
-    qiyin mavzularda chuqurroq tekshiradi.
-  </p>
-  <div style="background:var(--secondary-bg); border-radius:12px; padding:12px; margin:12px 0; text-align:left;">
-    <div style="font-size:13px; font-weight:600; margin-bottom:6px;">🎁 Bepul sinov:</div>
-    <div style="font-size:12px; color:var(--hint); line-height:1.5;">
-      • 5 ta mavzu + qisqa AI tahlil<br>
-      • To'liq 45 mavzu + shaxsiy reja — ⭐ pullik
+  <div class="start-body">
+    <div class="feature-cards">
+      <div class="feature-card">
+        <div class="fc-num">45</div>
+        <div class="fc-label">mavzu</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">🎯</div>
+        <div class="fc-label">adaptiv</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">⏱</div>
+        <div class="fc-label">vaqt o'lchanadi</div>
+      </div>
     </div>
+
+    <div class="info-card">
+      <div class="ic-title">💡 Qanday ishlaydi?</div>
+      <div class="ic-text">
+        Test sizning darajangizga moslashadi. Bilgan mavzulardan tezroq o'tadi, qiyin mavzularda chuqurroq tekshiradi.
+      </div>
+    </div>
+
+    <div class="trial-badge">
+      <div class="tb-icon">🎁</div>
+      <div class="tb-content">
+        <div class="tb-title">Bepul sinov: 5 mavzu + AI tahlil</div>
+        <div class="tb-desc">To'liq 45 mavzu + shaxsiy reja — pullik versiyada</div>
+      </div>
+    </div>
+
+    <button class="btn primary" onclick="startTest()">Testni boshlash</button>
   </div>
-  <button class="btn" onclick="startTest()">Testni boshlash</button>
 </div>
 
+<!-- ===== TEST SCREEN ===== -->
 <div id="test-screen" class="screen">
   <div id="progress-bar"><div id="progress-fill"></div></div>
   <div id="topic-header">
@@ -161,54 +438,76 @@ body {
   <div class="options" id="options-container"></div>
 </div>
 
+<!-- ===== PAUSE SCREEN ===== -->
 <div id="pause-screen" class="screen">
-  <h2>😤 Dam ol!</h2>
-  <p>Bir oz tinchlan va diqqatingni jamla.<br>Shoshilmasdan javob ber.</p>
-  <div id="pause-timer">2:00</div>
-  <button class="btn secondary" id="pause-skip" style="display:none" onclick="resumeTest()">Davom etish</button>
+  <div class="pause-content">
+    <div class="pause-icon">☕</div>
+    <h2>Dam oling!</h2>
+    <p class="pause-desc">Bir oz tinchlanib, diqqatingizni jamlang.<br>Shoshilmasdan javob bering.</p>
+    <div id="pause-timer">2:00</div>
+    <button class="btn secondary" id="pause-skip" style="display:none" onclick="resumeTest()">Davom etish</button>
+  </div>
 </div>
 
+<!-- ===== PAYWALL SCREEN ===== -->
 <div id="paywall-screen" class="screen">
-  <div style="text-align:center; padding-top:30px;">
-    <div style="font-size:48px; margin-bottom:12px;">🎯</div>
+  <div class="paywall-header">
+    <div class="pw-icon">🎯</div>
     <h2>Sinov test tugadi!</h2>
-    <p style="color:var(--hint); margin:12px 0; line-height:1.5;">
-      5 ta mavzu bo'yicha sinov natijangiz:
-    </p>
-    <div id="trial-results" style="margin:16px 0;"></div>
-    <div id="trial-ai" style="text-align:left; background:var(--secondary-bg); border-radius:12px; padding:14px; margin:16px 0; font-size:14px; line-height:1.6;"></div>
-    <p style="color:var(--hint); font-size:13px; margin:16px 0; line-height:1.5;">
-      Qolgan <strong>40 ta mavzu</strong> bo'yicha to'liq diagnostika + <strong>AI shaxsiy reja</strong> olish uchun to'liq versiyani oching.
-    </p>
-    <button class="btn" onclick="requestPayment()">⭐ To'liq test — sotib olish</button>
-    <button class="btn secondary" onclick="sendTrialResults()" style="margin-top:8px;">Bepul natijani yuborish</button>
+    <p>5 mavzu bo'yicha natijangiz tayyor</p>
+  </div>
+  <div class="paywall-body">
+    <div id="trial-results" class="trial-summary"></div>
+
+    <div id="trial-ai" class="ai-insight">
+      <div class="ai-label">🤖 AI tahlil</div>
+      <div id="trial-ai-text"></div>
+    </div>
+
+    <div class="upgrade-card">
+      <h3>To'liq diagnostika</h3>
+      <p>Qolgan 40 mavzu + AI shaxsiy 30 kunlik reja</p>
+    </div>
+
+    <button class="btn primary" onclick="requestPayment()">⭐ To'liq test — sotib olish</button>
+    <button class="btn secondary" onclick="sendTrialResults()">Bepul natijani yuborish</button>
   </div>
 </div>
 
+<!-- ===== RESULT SCREEN ===== -->
 <div id="result-screen" class="screen">
-  <div class="result-score" id="result-score"></div>
-  <div class="result-label">to'g'ri javob</div>
-  <div class="stat-row">
-    <div class="stat-box">
-      <div class="stat-num" id="r-total-q">0</div>
-      <div class="stat-label">jami savol</div>
+  <div class="result-header">
+    <div class="result-score-ring">
+      <div class="rs-num" id="result-score">0/0</div>
+      <div class="rs-label">to'g'ri</div>
     </div>
-    <div class="stat-box">
-      <div class="stat-num" id="r-time">0</div>
-      <div class="stat-label">o'rtacha vaqt</div>
-    </div>
-    <div class="stat-box">
-      <div class="stat-num" id="r-percent">0%</div>
-      <div class="stat-label">foiz</div>
-    </div>
+    <div class="rh-title" id="result-title">Natijangiz</div>
+    <div class="rh-subtitle" id="result-subtitle"></div>
   </div>
-  <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#4caf50"></div> Biladi</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#ff9800"></div> Mashq kerak</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#f44336"></div> Bilmaydi</div>
+  <div class="result-body">
+    <div class="result-stats">
+      <div class="rs-card">
+        <div class="rsc-num" id="r-total-q">0</div>
+        <div class="rsc-label">jami savol</div>
+      </div>
+      <div class="rs-card">
+        <div class="rsc-num" id="r-time">0</div>
+        <div class="rsc-label">o'rtacha vaqt</div>
+      </div>
+      <div class="rs-card">
+        <div class="rsc-num" id="r-percent">0%</div>
+        <div class="rsc-label">foiz</div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div> Biladi</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> Mashq kerak</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Bilmaydi</div>
+    </div>
+    <div class="topic-list" id="topic-list"></div>
+    <button class="btn primary" onclick="sendResults()">Natijani yuborish</button>
   </div>
-  <div class="topic-list" id="topic-list"></div>
-  <button class="btn" onclick="sendResults()">Natijani yuborish</button>
 </div>
 
 <script>
@@ -559,22 +858,22 @@ function showPaywall() {
   const summary = engine.getSummary();
   const trialTopics = summary.topicResults;
 
-  let html = '<div style="display:flex; gap:8px; justify-content:center; flex-wrap:wrap;">';
+  let html = '';
   for (const t of trialTopics) {
     const emoji = t.status === 'yashil' ? '🟢' : t.status === 'sariq' ? '🟡' : '🔴';
-    html += `<div style="background:var(--secondary-bg); border-radius:8px; padding:6px 10px; font-size:12px;">${emoji} ${t.title.substring(0, 20)}</div>`;
+    html += `<div class="trial-chip">${emoji} ${t.title.substring(0, 25)}</div>`;
   }
-  html += '</div>';
   document.getElementById('trial-results').innerHTML = html;
 
   const greens = trialTopics.filter(t => t.status === 'yashil').length;
   const reds = trialTopics.filter(t => t.status === 'qizil').length;
-  let aiText = `📊 5 mavzu sinovi: ${greens} ta biladi, ${trialTopics.length - greens - reds} ta mashq kerak, ${reds} ta zaif.\n\n`;
+  const yellows = trialTopics.length - greens - reds;
+
+  let aiText = `<strong>${greens}</strong> ta mavzuni bilasiz, <strong>${yellows}</strong> tasida mashq kerak, <strong>${reds}</strong> tasi zaif.`;
   if (reds > 0) {
-    aiText += `⚠️ Zaif mavzular: ${trialTopics.filter(t => t.status === 'qizil').map(t => t.title).join(', ')}.\n\n`;
+    aiText += `<br><br>⚠️ Zaif: ${trialTopics.filter(t => t.status === 'qizil').map(t => t.title).join(', ')}.`;
   }
-  aiText += `💡 To'liq 45 mavzulik test qolgan 40 mavzuni ham tekshiradi va AI shaxsiy 30 kunlik reja tuzib beradi.`;
-  document.getElementById('trial-ai').textContent = aiText;
+  document.getElementById('trial-ai-text').innerHTML = aiText;
 }
 
 function requestPayment() {
@@ -616,15 +915,24 @@ function finishTest() {
   document.getElementById('r-time').textContent = `${summary.avgTime}s`;
   document.getElementById('r-percent').textContent = `${summary.percent}%`;
 
+  let gradeText = '';
+  if (summary.percent >= 80) gradeText = "A'lo natija!";
+  else if (summary.percent >= 60) gradeText = 'Yaxshi natija';
+  else if (summary.percent >= 40) gradeText = "Mashq kerak";
+  else gradeText = 'Tayyorgarlik zarur';
+  document.getElementById('result-title').textContent = gradeText;
+  document.getElementById('result-subtitle').textContent = `${summary.percent}% to'g'ri javob`;
+
   const listEl = document.getElementById('topic-list');
   listEl.innerHTML = '';
   for (const t of summary.topicResults) {
     const item = document.createElement('div');
     item.className = 'topic-item';
+    const emoji = t.status === 'yashil' ? '🟢' : t.status === 'sariq' ? '🟡' : '🔴';
     item.innerHTML = `
       <div class="topic-status ${t.status}"></div>
       <div class="topic-name">${t.title}</div>
-      <div class="topic-pct">${t.status === 'yashil' ? '🟢' : t.status === 'sariq' ? '🟡' : '🔴'}</div>
+      <div class="topic-pct">${emoji}</div>
     `;
     listEl.appendChild(item);
   }
