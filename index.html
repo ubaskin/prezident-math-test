@@ -506,7 +506,7 @@ body {
       <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Bilmaydi</div>
     </div>
     <div class="topic-list" id="topic-list"></div>
-    <button class="btn primary" onclick="sendResults()">Natijani yuborish</button>
+    <button class="btn primary" onclick="sendResults()">📤 Natijani yuborish</button>
   </div>
 </div>
 
@@ -711,17 +711,71 @@ class AdaptiveEngine {
   }
 }
 
+function saveProgress() {
+  if (!engine) return;
+  const state = {
+    lessonIndex: engine.lessonIndex,
+    globalLevel: engine.globalLevel,
+    topicResults: engine.topicResults,
+    responses: engine.responses,
+    usedKeys: [...engine.usedKeys],
+    isPaid: engine.isPaid,
+    consecutiveFastWrong: engine.consecutiveFastWrong,
+    totalQuestionsAsked,
+    savedAt: Date.now()
+  };
+  try { localStorage.setItem('pmt_progress', JSON.stringify(state)); } catch {}
+}
+
+function loadSavedProgress() {
+  try {
+    const raw = localStorage.getItem('pmt_progress');
+    if (!raw) return null;
+    const state = JSON.parse(raw);
+    if (Date.now() - state.savedAt > 24 * 3600 * 1000) {
+      localStorage.removeItem('pmt_progress');
+      return null;
+    }
+    return state;
+  } catch { return null; }
+}
+
+function resumeFromSaved(state) {
+  engine = new AdaptiveEngine();
+  engine.lessonIndex = state.lessonIndex;
+  engine.globalLevel = state.globalLevel;
+  engine.topicResults = state.topicResults;
+  engine.responses = state.responses;
+  engine.usedKeys = new Set(state.usedKeys);
+  engine.isPaid = state.isPaid;
+  engine.consecutiveFastWrong = state.consecutiveFastWrong;
+  totalQuestionsAsked = state.totalQuestionsAsked;
+  showScreen('test-screen');
+  startNextTopic();
+}
+
+function clearProgress() {
+  try { localStorage.removeItem('pmt_progress'); } catch {}
+}
+
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
 }
 
 function startTest() {
-  engine = new AdaptiveEngine();
+  const saved = loadSavedProgress();
   const params = new URLSearchParams(window.location.search);
-  if (params.get('paid') === '1') {
-    engine.isPaid = true;
+  const isPaid = params.get('paid') === '1';
+
+  if (saved && saved.responses.length > 0) {
+    if (isPaid) saved.isPaid = true;
+    resumeFromSaved(saved);
+    return;
   }
+
+  engine = new AdaptiveEngine();
+  if (isPaid) engine.isPaid = true;
   totalQuestionsAsked = 0;
   showScreen('test-screen');
   startNextTopic();
@@ -797,6 +851,7 @@ function selectAnswer(letter) {
   });
 
   const result = engine.processAnswer(q, letter, timeSec);
+  saveProgress();
 
   setTimeout(() => {
     if (result.action === 'pause') {
@@ -936,10 +991,13 @@ function finishTest() {
     `;
     listEl.appendChild(item);
   }
+  clearProgress();
+  setTimeout(() => sendResults(), 500);
 }
 
 function sendResults() {
   const summary = engine.getSummary();
+  clearProgress();
   tg.sendData(JSON.stringify({
     responses: summary.responses,
     topicResults: summary.topicResults,
@@ -947,6 +1005,7 @@ function sendResults() {
     total: summary.total,
     percent: summary.percent,
     avgTime: summary.avgTime,
+    isTrial: !engine.isPaid,
   }));
 }
 </script>
