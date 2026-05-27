@@ -801,7 +801,14 @@ function resumeFromSaved(state) {
 
 function clearProgress() {
   try { localStorage.removeItem('pmt_progress'); } catch {}
-  fbRef.remove().catch(() => {});
+  fbRef.once('value').then(snap => {
+    const data = snap.val();
+    if (data) {
+      const archiveRef = fbDb.ref(`prezident_test/completed/${userId}/${Date.now()}`);
+      archiveRef.set(data).catch(() => {});
+    }
+    fbRef.remove().catch(() => {});
+  }).catch(() => {});
 }
 
 function showScreen(id) {
