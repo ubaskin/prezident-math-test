@@ -1025,7 +1025,6 @@ function requestPayment() {
 function sendTrialResults() {
   const summary = engine.getSummary();
   const topics = summary.topicResults.map(({questions, ...t}) => t);
-  clearProgress();
   tg.sendData(JSON.stringify({
     responses: summary.responses,
     topicResults: topics,
@@ -1082,7 +1081,6 @@ function finishTest() {
 function sendResults() {
   const summary = engine.getSummary();
   const topics = summary.topicResults.map(({questions, ...t}) => t);
-  clearProgress();
   tg.sendData(JSON.stringify({
     responses: summary.responses,
     topicResults: topics,
