@@ -799,17 +799,6 @@ function resumeFromSaved(state) {
   startNextTopic();
 }
 
-function clearProgress() {
-  try { localStorage.removeItem('pmt_progress'); } catch {}
-  fbRef.once('value').then(snap => {
-    const data = snap.val();
-    if (data) {
-      const archiveRef = fbDb.ref(`prezident_test/completed/${userId}/${Date.now()}`);
-      archiveRef.set(data).catch(() => {});
-    }
-    fbRef.remove().catch(() => {});
-  }).catch(() => {});
-}
 
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -824,6 +813,11 @@ async function startTest() {
 
   if (saved && saved.responses && saved.responses.length > 0) {
     if (isPaid) saved.isPaid = true;
+    if (saved.lessonIndex >= lessons.length) {
+      resumeFromSaved(saved);
+      finishTest();
+      return;
+    }
     resumeFromSaved(saved);
     return;
   }
@@ -1081,7 +1075,7 @@ function finishTest() {
     `;
     listEl.appendChild(item);
   }
-  clearProgress();
+  saveProgress();
   setTimeout(() => sendResults(), 500);
 }
 
