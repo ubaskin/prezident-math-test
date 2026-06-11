@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Sinov Test — Javob Kiritish</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: var(--tg-theme-bg-color, #fff);
+  --text: var(--tg-theme-text-color, #000);
+  --hint: var(--tg-theme-hint-color, #999);
+  --btn: var(--tg-theme-button-color, #3390ec);
+  --btn-text: var(--tg-theme-button-text-color, #fff);
+  --secondary-bg: var(--tg-theme-secondary-bg-color, #f0f0f0);
+  --success: #10b981;
+  --danger: #ef4444;
+  --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ===== LOADING ===== */
+#loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 16px;
+}
+.spinner {
+  width: 40px; height: 40px;
+  border: 3px solid var(--secondary-bg);
+  border-top-color: var(--btn);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== HEADER ===== */
+.page-header {
+  background: var(--accent-gradient);
+  padding: 20px 16px 16px;
+  text-align: center;
+  color: #fff;
+}
+.page-header h1 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.page-header p { font-size: 13px; opacity: 0.85; }
+
+/* ===== ANSWER SCREEN ===== */
+#answer-screen { padding-bottom: 80px; }
+
+.sticky-progress {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg);
+  padding: 10px 16px 8px;
+  border-bottom: 1px solid var(--secondary-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--hint);
+}
+.progress-bar {
+  height: 3px;
+  background: var(--secondary-bg);
+  border-radius: 2px;
+  margin: 6px 16px 0;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--btn);
+  transition: width 0.3s;
+}
+
+.questions-list { padding: 12px 16px; display: flex; flex-direction: column; gap: 10px; }
+
+.question-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.q-num {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--hint);
+  width: 28px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.abcd-group {
+  display: flex;
+  gap: 6px;
+  flex: 1;
+}
+.abcd-btn {
+  flex: 1;
+  padding: 8px 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.1s;
+}
+.abcd-btn:active { transform: scale(0.95); }
+.abcd-btn.selected {
+  background: var(--btn);
+  color: var(--btn-text);
+  border-color: var(--btn);
+}
+.abcd-btn.correct {
+  background: var(--success);
+  color: #fff;
+  border-color: var(--success);
+}
+.abcd-btn.wrong {
+  background: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+}
+
+.submit-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  padding: 12px 16px;
+  background: var(--bg);
+  border-top: 1px solid var(--secondary-bg);
+}
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background: var(--accent-gradient);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.submit-btn:not(:disabled):active { opacity: 0.85; }
+
+/* ===== RESULT SCREEN ===== */
+#result-screen { padding: 16px 16px 80px; }
+
+.result-header {
+  background: var(--accent-gradient);
+  border-radius: 20px;
+  padding: 24px 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.result-score { font-size: 48px; font-weight: 800; }
+.result-pct { font-size: 18px; opacity: 0.9; margin-top: 4px; }
+.result-label { font-size: 14px; opacity: 0.8; margin-top: 6px; }
+
+.domain-card {
+  background: var(--secondary-bg);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.domain-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.domain-bar-bg { height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px; margin-bottom: 4px; overflow: hidden; }
+.domain-bar { height: 100%; border-radius: 3px; background: var(--btn); }
+.domain-stats { font-size: 12px; color: var(--hint); }
+
+.answers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+}
+.ans-cell {
+  border-radius: 8px;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 12px;
+}
+.ans-cell .num { font-weight: 600; color: var(--hint); font-size: 11px; }
+.ans-cell .mark { font-size: 15px; }
+.ans-cell.correct-cell { background: #ecfdf5; }
+.ans-cell.wrong-cell { background: #fef2f2; }
+
+.ai-section {
+  background: var(--secondary-bg);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+.ai-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--hint);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+/* ===== ERROR ===== */
+#error-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+#error-screen .err-icon { font-size: 48px; }
+#error-screen p { color: var(--hint); font-size: 14px; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<div id="loading-screen" class="screen active">
+  <div class="spinner"></div>
+  <p style="color:var(--hint);font-size:14px">Yuklanmoqda...</p>
+</div>
+
+<div id="answer-screen" class="screen">
+  <div class="page-header">
+    <h1>Sinov Test — Javob Kiritish</h1>
+    <p id="header-subtitle">30 savol · PDF'ga qarab javob beling</p>
+  </div>
+  <div>
+    <div class="sticky-progress">
+      <span id="answered-count">0 / 30 belgilandi</span>
+      <span id="test-id-label"></span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+  <div class="questions-list" id="questions-list"></div>
+  <div class="submit-bar">
+    <button class="submit-btn" id="submit-btn" disabled>Javoblarni yuborish</button>
+  </div>
+</div>
+
+<div id="result-screen" class="screen">
+  <div class="result-header">
+    <div class="result-score" id="res-score">—</div>
+    <div class="result-pct" id="res-pct"></div>
+    <div class="result-label" id="res-label"></div>
+  </div>
+  <div id="domain-cards"></div>
+  <div style="margin-top:12px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:8px">Har savol natijalari:</div>
+    <div class="answers-grid" id="answers-grid"></div>
+  </div>
+  <div id="ai-section" style="display:none" class="ai-section">
+    <div class="ai-label">AI tahlil</div>
+    <div id="ai-text"></div>
+  </div>
+</div>
+
+<div id="error-screen" class="screen">
+  <div class="err-icon">⚠️</div>
+  <div style="font-size:16px;font-weight:600" id="err-title">Xato</div>
+  <p id="err-msg">Iltimos, botdan qayta oching.</p>
+</div>
+
+<script>
+const tg = window.Telegram.WebApp;
+tg.ready();
+tg.expand();
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBxxxxxxxxxxxxxxxxxxxx",
+  databaseURL: "https://ziyokor2024-default-rtdb.firebaseio.com",
+  projectId: "ziyokor2024",
+};
+
+let db;
+try {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.database();
+} catch(e) {
+  showError("Firebase xatosi", e.message);
+}
+
+const userId = tg.initDataUnsafe?.user?.id || "anonymous";
+const userName = [tg.initDataUnsafe?.user?.first_name, tg.initDataUnsafe?.user?.last_name]
+  .filter(Boolean).join(" ") || "O'quvchi";
+
+let currentTestId = null;
+let totalCount = 30;
+const answers = {};
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function showError(title, msg) {
+  document.getElementById('err-title').textContent = title || "Xato";
+  document.getElementById('err-msg').textContent = msg || "Iltimos, botdan qayta oching.";
+  showScreen('error-screen');
+}
+
+async function fetchCurrentJson() {
+  const base = window.location.href.replace(/\/[^/]*$/, '');
+  const url = base + '/current.json';
+  const r = await fetch(url + '?t=' + Date.now());
+  if (!r.ok) throw new Error('current.json topilmadi');
+  return r.json();
+}
+
+async function init() {
+  try {
+    const cur = await fetchCurrentJson();
+    currentTestId = cur.test_id;
+    totalCount = cur.count || 30;
+
+    document.getElementById('header-subtitle').textContent =
+      `${totalCount} savol · PDF'ga qarab javob beling`;
+    document.getElementById('test-id-label').textContent = currentTestId;
+
+    // Avvalgi natija bormi?
+    const resultSnap = await db
+      .ref(`prezident_test/sinov_result/${currentTestId}/${userId}`)
+      .once('value');
+
+    if (resultSnap.exists()) {
+      const saved = resultSnap.val();
+      renderResult(saved, false);
+      showScreen('result-screen');
+      return;
+    }
+
+    // Avvalgi javoblar bormi? (submit qilingan lekin natija hali yuborilmagan holat)
+    const submitSnap = await db
+      .ref(`prezident_test/sinov/${currentTestId}/${userId}`)
+      .once('value');
+
+    if (submitSnap.exists()) {
+      // Allaqachon yuborilgan, bot hali natija bermagan
+      showWaitingScreen();
+      return;
+    }
+
+    buildAnswerForm();
+    showScreen('answer-screen');
+  } catch(e) {
+    showError("Yuklab bo'lmadi", e.message);
+  }
+}
+
+function showWaitingScreen() {
+  showError("Kutilmoqda", "Javoblaringiz yuborildi. Bot natijani tahlil qilmoqda, biroz kuting.");
+}
+
+function buildAnswerForm() {
+  const list = document.getElementById('questions-list');
+  list.innerHTML = '';
+  for (let i = 1; i <= totalCount; i++) {
+    const row = document.createElement('div');
+    row.className = 'question-row';
+    row.innerHTML = `
+      <div class="q-num">${i}</div>
+      <div class="abcd-group" id="group-${i}">
+        ${['A','B','C','D'].map(l =>
+          `<button class="abcd-btn" data-q="${i}" data-l="${l}">${l}</button>`
+        ).join('')}
+      </div>`;
+    list.appendChild(row);
+  }
+  list.addEventListener('click', e => {
+    const btn = e.target.closest('.abcd-btn');
+    if (!btn) return;
+    const q = btn.dataset.q;
+    const l = btn.dataset.l;
+    document.querySelectorAll(`#group-${q} .abcd-btn`).forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    answers[q] = l;
+    updateProgress();
+  });
+}
+
+function updateProgress() {
+  const filled = Object.keys(answers).length;
+  document.getElementById('answered-count').textContent = `${filled} / ${totalCount} belgilandi`;
+  const pct = Math.round(filled / totalCount * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = filled < totalCount;
+  btn.textContent = filled < totalCount
+    ? `Javoblarni yuborish (${totalCount - filled} qoldi)`
+    : 'Javoblarni yuborish ✓';
+}
+
+document.getElementById('submit-btn').addEventListener('click', async () => {
+  const filled = Object.keys(answers).length;
+  if (filled < totalCount) return;
+
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Yuborilmoqda...';
+
+  try {
+    await db.ref(`prezident_test/sinov/${currentTestId}/${userId}`).set({
+      answers,
+      submitted_at: firebase.database.ServerValue.TIMESTAMP,
+      name: userName,
+    });
+    tg.sendData(JSON.stringify({ type: 'sinov_submit', test_id: currentTestId }));
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = 'Javoblarni yuborish ✓';
+    showError("Yuborib bo'lmadi", e.message);
+  }
+});
+
+function renderResult(data, isNew) {
+  const { correct, total, percent, domains_json, ai_report, per_question } = data;
+
+  document.getElementById('res-score').textContent = `${correct}/${total}`;
+  document.getElementById('res-pct').textContent = `${percent}%`;
+
+  let label = '';
+  if (percent >= 80) label = "A'lo natija!";
+  else if (percent >= 60) label = "Yaxshi natija";
+  else if (percent >= 40) label = "Mashq kerak";
+  else label = "Tayyorgarlik zarur";
+  document.getElementById('res-label').textContent = label;
+
+  // Domain cards
+  const domainDiv = document.getElementById('domain-cards');
+  domainDiv.innerHTML = '';
+  if (domains_json) {
+    let domains;
+    try { domains = typeof domains_json === 'string' ? JSON.parse(domains_json) : domains_json; }
+    catch(e) { domains = null; }
+    if (domains) {
+      for (const [name, stats] of Object.entries(domains)) {
+        const pct = stats.total > 0 ? Math.round(stats.correct / stats.total * 100) : 0;
+        const card = document.createElement('div');
+        card.className = 'domain-card';
+        card.innerHTML = `
+          <div class="domain-title">${name}</div>
+          <div class="domain-bar-bg"><div class="domain-bar" style="width:${pct}%"></div></div>
+          <div class="domain-stats">${stats.correct}/${stats.total} to'g'ri · ${pct}%</div>`;
+        domainDiv.appendChild(card);
+      }
+    }
+  }
+
+  // Per-question grid
+  const grid = document.getElementById('answers-grid');
+  grid.innerHTML = '';
+  if (per_question) {
+    let pq;
+    try { pq = typeof per_question === 'string' ? JSON.parse(per_question) : per_question; }
+    catch(e) { pq = null; }
+    if (pq) {
+      for (let i = 1; i <= total; i++) {
+        const info = pq[String(i)] || {};
+        const isOk = info.correct;
+        const cell = document.createElement('div');
+        cell.className = `ans-cell ${isOk ? 'correct-cell' : 'wrong-cell'}`;
+        cell.innerHTML = `<div class="num">${i}</div><div class="mark">${isOk ? '✅' : '❌'}</div>`;
+        grid.appendChild(cell);
+      }
+    }
+  }
+
+  // AI tahlil (faqat bir marta, isNew bo'lsa keyin bot yuboradi)
+  if (ai_report) {
+    document.getElementById('ai-text').textContent = ai_report;
+    document.getElementById('ai-section').style.display = 'block';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
